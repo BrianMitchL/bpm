@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -22,23 +23,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let timeout = 3
-    var average = 0
-    var weight = 0
-    var lastTime = NSDate()
+    var average: Double = 0
+    var count = 0
+    var lastTime: NSDate? = nil
     
 
     @IBAction func bpmTap(sender: UIButton) {
         let currentTime = NSDate()
-        var (newAverage, newWeight) = calculateBPM(currentTime, lastTime: lastTime, average: average, weight: weight)
-        weight = newWeight
+        if count < 1 {
+            lastTime = NSDate(timeIntervalSinceNow: -1)
+        }
+        let timeDiff = currentTime.timeIntervalSinceDate(lastTime!)
+        let newAverage = calculateBPM(timeDiff, average: average, newCount: count)
+        count += 1
         average = newAverage
         lastTime = currentTime
-        bpmDisplay.text = "\(average)"
+        bpmDisplay.text = "\(Int(average))"
     }
     
-    func calculateBPM(currentTime: NSDate, lastTime: NSDate, average: Int, weight: Int) -> (newAverage: Int, newWeight: Int) {
-        return (128, 1)
+    func calculateBPM(timeDiff: NSTimeInterval, average: Double, newCount: Int) -> Double {
+        if newCount > 2 {
+            count = 1
+        }
+        return ((60/timeDiff) + Double(average) * Double(newCount)) / Double(newCount + 1)
     }
 }
 
