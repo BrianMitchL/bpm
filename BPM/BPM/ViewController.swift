@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var bpmDisplay: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +21,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    let timeout = 3
+    var average = 0
+    var weight = 0
+    var lastTime = NSDate()
+    
 
     @IBAction func bpmTap(sender: UIButton) {
-        
+        let currentTime = NSDate()
+        var (newAverage, newWeight) = calculateBPM(currentTime, lastTime: lastTime, average: average, weight: weight)
+        weight = newWeight
+        average = newAverage
+        lastTime = currentTime
+        bpmDisplay.text = "\(average)"
     }
-
-    @IBOutlet weak var bpmDisplay: UITextField!
     
-    
+    func calculateBPM(currentTime: NSDate, lastTime: NSDate, average: Int, weight: Int) -> (newAverage: Int, newWeight: Int) {
+        return (128, 1)
+    }
 }
 
