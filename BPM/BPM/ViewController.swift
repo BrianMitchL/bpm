@@ -11,7 +11,7 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var bpmDisplay: UITextField!
+    @IBOutlet weak var bpmDisplay: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
