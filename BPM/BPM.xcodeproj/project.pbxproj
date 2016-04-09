@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96005C351CB9361F00B78C22 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96005C341CB9361F00B78C22 /* BMButton.swift */; };
 		9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D51CB8A223007D2041 /* AppDelegate.swift */; };
 		9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D71CB8A223007D2041 /* ViewController.swift */; };
 		9625F1DB1CB8A223007D2041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9625F1D91CB8A223007D2041 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96005C341CB9361F00B78C22 /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		9625F1D21CB8A223007D2041 /* BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9625F1D51CB8A223007D2041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9625F1D71CB8A223007D2041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				9625F1D51CB8A223007D2041 /* AppDelegate.swift */,
 				9625F1D71CB8A223007D2041 /* ViewController.swift */,
 				9625F1D91CB8A223007D2041 /* Main.storyboard */,
+				96005C341CB9361F00B78C22 /* BMButton.swift */,
 				9625F1DC1CB8A223007D2041 /* Assets.xcassets */,
 				9625F1DE1CB8A223007D2041 /* LaunchScreen.storyboard */,
 				9625F1E11CB8A223007D2041 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */,
+				96005C351CB9361F00B78C22 /* BMButton.swift in Sources */,
 				9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +499,7 @@
 				9625F1FC1CB8A224007D2041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9625F1FD1CB8A224007D2041 /* Build configuration list for PBXNativeTarget "BPMTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				9625F1FF1CB8A224007D2041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9625F2001CB8A224007D2041 /* Build configuration list for PBXNativeTarget "BPMUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				9625F2021CB8A224007D2041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

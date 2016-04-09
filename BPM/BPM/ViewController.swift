@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     var lastTime: NSDate? = nil
     
 
-    @IBAction func bpmTap(sender: UIButton) {
+    @IBAction func bpmTap(sender: BMButton) {
         let currentTime = NSDate()
         if count < 1 {
             lastTime = NSDate(timeIntervalSinceNow: -1)

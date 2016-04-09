@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F18c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,15 +22,15 @@
                                 <accessibility key="accessibilityConfiguration" label="Beats Per Minute">
                                     <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="f64-2Y-Fpi"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU">
-                                <rect key="frame" x="20" y="66" width="560" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
+                                <rect key="frame" x="280" y="279" width="41" height="41"/>
                                 <color key="backgroundColor" red="0.80646678664921467" green="0.80646678664921467" blue="0.80646678664921467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="USF-I4-EwI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Tap"/>
                                 <connections>
@@ -40,12 +40,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FUf-Fk-GG9"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JcU-zl-WOj"/>
-                            <constraint firstItem="M9T-uM-WUt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QFr-VD-Rc0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="20" id="iOt-P8-ZFZ"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="M9T-uM-WUt" secondAttribute="centerX" id="imj-s9-spo"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="top" secondItem="M9T-uM-WUt" secondAttribute="bottom" constant="8" symbolic="YES" id="t2w-fd-Ihz"/>
+                            <constraint firstItem="M9T-uM-WUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rr-Sd-i2b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="280" id="70u-Ee-ans"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83n-NE-gu0"/>
+                            <constraint firstItem="M9T-uM-WUt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OLP-SC-n1V"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="259" id="T86-t4-Z0L"/>
                         </constraints>
                     </view>
                     <connections>
