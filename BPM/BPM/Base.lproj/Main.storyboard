@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F18c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,38 +19,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="2bN-QV-Rra"/>
-                                    <constraint firstAttribute="height" constant="100" id="lH9-cM-29G"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-nT-QkB">
-                                <rect key="frame" x="269.5" y="20" width="61" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-nT-QkB">
+                                <rect key="frame" x="227" y="70" width="147" height="86"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
                                 </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
+                                <rect key="frame" x="250" y="275" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="Tey-D8-qn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.53687459230422974" green="0.53697031736373901" blue="0.53686851263046265" alpha="0.50232568641618502" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRippleRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
+                                        <color key="value" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="backgroundColor" red="0.97618585824966431" green="0.9763527512550354" blue="0.97617536783218384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07a-Ky-aql"/>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9tN-2b-FbO"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C2f-jU-2dw"/>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fg7-6K-r51"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="1" id="AvV-ZI-rWI"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="1.5" constant="40" id="OYJ-MN-tev"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="goR-6S-8wP"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="sB7-NG-B5r"/>
                         </constraints>
                     </view>
                     <connections>
