@@ -33,7 +33,7 @@
                                 <rect key="frame" x="250" y="275" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="Tey-D8-qn5"/>
+                                    <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="v2m-W9-t58"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -64,11 +64,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97618585824966431" green="0.9763527512550354" blue="0.97617536783218384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="1" id="AvV-ZI-rWI"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="1.5" constant="40" id="OYJ-MN-tev"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="c6H-Wg-c4K"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="goR-6S-8wP"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="sB7-NG-B5r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="hNr-hk-YDo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="20" id="oeC-Pt-7mm"/>
                         </constraints>
                     </view>
                     <connections>
