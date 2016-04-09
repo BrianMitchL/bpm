@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200EECAD1CB94E1C00949F68 /* Buttons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200EECAC1CB94E1C00949F68 /* Buttons.xcassets */; };
 		96005C351CB9361F00B78C22 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96005C341CB9361F00B78C22 /* BMButton.swift */; };
 		9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D51CB8A223007D2041 /* AppDelegate.swift */; };
 		9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D71CB8A223007D2041 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200EECAC1CB94E1C00949F68 /* Buttons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Buttons.xcassets; sourceTree = "<group>"; };
 		96005C341CB9361F00B78C22 /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		9625F1D21CB8A223007D2041 /* BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9625F1D51CB8A223007D2041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9625F1DC1CB8A223007D2041 /* Assets.xcassets */,
 				9625F1DE1CB8A223007D2041 /* LaunchScreen.storyboard */,
 				9625F1E11CB8A223007D2041 /* Info.plist */,
+				200EECAC1CB94E1C00949F68 /* Buttons.xcassets */,
 			);
 			path = BPM;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 				TargetAttributes = {
 					9625F1D11CB8A223007D2041 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 7LRB2675WR;
+						DevelopmentTeam = TM3YQQZ867;
 					};
 					9625F1E51CB8A224007D2041 = {
 						CreatedOnToolsVersion = 7.3;
@@ -238,6 +241,7 @@
 				9625F1E01CB8A223007D2041 /* LaunchScreen.storyboard in Resources */,
 				9625F1DD1CB8A223007D2041 /* Assets.xcassets in Resources */,
 				9625F1DB1CB8A223007D2041 /* Main.storyboard in Resources */,
+				200EECAD1CB94E1C00949F68 /* Buttons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +417,7 @@
 				INFOPLIST_FILE = BPM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.brianm.BPM;
+				PRODUCT_BUNDLE_IDENTIFIER = zach.bpm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -428,7 +432,7 @@
 				INFOPLIST_FILE = BPM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.brianm.BPM;
+				PRODUCT_BUNDLE_IDENTIFIER = zach.bpm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
