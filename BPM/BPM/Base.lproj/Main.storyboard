@@ -4,7 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-nT-QkB">
-                                <rect key="frame" x="227" y="70" width="147" height="86"/>
+                                <rect key="frame" x="227" y="40" width="147" height="86"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
                                 </accessibility>
@@ -29,8 +28,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
-                                <rect key="frame" x="250" y="275" width="100" height="100"/>
+                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
+                                <rect key="frame" x="93" y="146" width="414" height="414"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="v2m-W9-t58"/>
@@ -64,11 +63,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97618585824966431" green="0.9763527512550354" blue="0.97617536783218384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="1.5" constant="40" id="OYJ-MN-tev"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="c6H-Wg-c4K"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" id="AKg-ik-DqM"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DLK-pf-MED"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="lessThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" constant="20" id="LaK-SL-V0g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" id="RWO-R9-34T"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="RpK-Ac-zu3"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aLW-Z1-vaF"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="hNr-hk-YDo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="20" id="oeC-Pt-7mm"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lEQ-me-5HY"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMp-hm-7xn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="lessThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="40" id="wpL-OG-o6I"/>
                         </constraints>
                     </view>
                     <connections>
