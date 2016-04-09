@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-nT-QkB">
-                                <rect key="frame" x="279" y="38" width="42" height="21"/>
+                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2bN-QV-Rra"/>
+                                    <constraint firstAttribute="height" constant="100" id="lH9-cM-29G"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-nT-QkB">
+                                <rect key="frame" x="269.5" y="20" width="61" height="30"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
                                 </accessibility>
@@ -27,44 +41,22 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUD-8N-RYU" customClass="BMButton" customModule="BPM" customModuleProvider="target">
-                                <rect key="frame" x="150" y="196" width="300" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bUD-8N-RYU" secondAttribute="height" multiplier="1:1" id="USF-I4-EwI"/>
-                                </constraints>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" image="Buttons"/>
-                                <connections>
-                                    <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="5hY-rD-CBL"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="176" id="LLG-75-9aN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="104" id="RYm-iL-NU7"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="trailing" secondItem="eqN-nT-QkB" secondAttribute="trailing" id="Rti-KY-oCu"/>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJw-L5-w9R"/>
-                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fnk-KI-p9a"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07a-Ky-aql"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9tN-2b-FbO"/>
+                            <constraint firstItem="bUD-8N-RYU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C2f-jU-2dw"/>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fg7-6K-r51"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Rti-KY-oCu"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="bpmDisplay" destination="eqN-nT-QkB" id="TL7-E8-T0H"/>
+                        <outlet property="bpmDisplay" destination="eqN-nT-QkB" id="3H5-8f-IEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="389"/>
+            <point key="canvasLocation" x="276" y="396"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Buttons" width="1000" height="1000"/>
-    </resources>
 </document>
