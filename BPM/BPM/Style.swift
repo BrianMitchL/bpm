@@ -33,7 +33,7 @@ struct Style {
     
     // MARK: Dark Color Scheme
     static func themeDark() {
-        backgroundColor = UIColor.init(hue:0, saturation:0, brightness:0.025, alpha:1)
+        backgroundColor = UIColor.init(hue:0, saturation:0, brightness:0.1, alpha:1)
         bpmDisplayFontColor = UIColor.lightGrayColor()
         bpmDisplayFont = UIFont.systemFontOfSize(72)
         bpmTapFont = UIFont.systemFontOfSize(32)
