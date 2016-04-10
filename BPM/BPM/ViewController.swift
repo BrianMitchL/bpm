@@ -10,12 +10,18 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
+    var loadTheme: Bool = {
+        Style.loadTheme()
+        return true
+    }()
     
     @IBOutlet weak var bpmDisplay: UILabel!
+    @IBOutlet weak var bpmTap: BMButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        self.view.backgroundColor = UIColor.brownColor()
     }
 
     override func didReceiveMemoryWarning() {

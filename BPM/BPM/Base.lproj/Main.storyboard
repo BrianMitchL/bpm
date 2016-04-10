@@ -87,7 +87,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
-                                        <color key="value" red="0.89990204572677612" green="0.90005642175674438" blue="0.89989227056503296" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.89784878492355347" green="0.90210580825805664" blue="0.897816002368927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRippleRadius">
@@ -135,6 +135,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="bpmDisplay" destination="eqN-nT-QkB" id="3H5-8f-IEz"/>
+                        <outlet property="bpmTap" destination="bUD-8N-RYU" id="K4z-kb-SnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
