@@ -14,15 +14,18 @@ class ViewController: UIViewController {
         Style.loadTheme()
         return true
     }()
+    var isLight = true
     
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
 
     @IBAction func changeTheme(sender: AnyObject) {
-        if (Style.backgroundColor == UIColor.init(hue:0.1, saturation:1, brightness:0.975, alpha:1)) {
+        if (isLight) {
             Style.themeDark()
+            isLight = false
         } else {
             Style.themeLight()
+            isLight = true
         }
         
         self.view.backgroundColor = Style.backgroundColor
