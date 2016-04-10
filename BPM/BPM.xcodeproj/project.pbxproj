@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200D3D161CB9E8B70040982D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D3D151CB9E8B70040982D /* MenuViewController.swift */; };
 		961D7A7D1CB9774B007BA96C /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D7A7C1CB9774B007BA96C /* BMButton.swift */; };
 		9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D51CB8A223007D2041 /* AppDelegate.swift */; };
 		9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D71CB8A223007D2041 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200D3D151CB9E8B70040982D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		961D7A7C1CB9774B007BA96C /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		9625F1D21CB8A223007D2041 /* BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9625F1D51CB8A223007D2041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				9625F1D51CB8A223007D2041 /* AppDelegate.swift */,
 				9625F1D71CB8A223007D2041 /* ViewController.swift */,
+				200D3D151CB9E8B70040982D /* MenuViewController.swift */,
 				9625F1D91CB8A223007D2041 /* Main.storyboard */,
 				961D7A7C1CB9774B007BA96C /* BMButton.swift */,
 				9625F1DC1CB8A223007D2041 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */,
 				961D7A7D1CB9774B007BA96C /* BMButton.swift in Sources */,
 				9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */,
+				200D3D161CB9E8B70040982D /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
