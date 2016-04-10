@@ -18,6 +18,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
 
+    @IBAction func changeTheme(sender: AnyObject) {
+        if (Style.backgroundColor == UIColor.init(hue:0.1, saturation:1, brightness:0.975, alpha:1)) {
+            Style.themeDark()
+        } else {
+            Style.themeLight()
+        }
+        
+        self.view.backgroundColor = Style.backgroundColor
+        bpmDisplay.textColor = Style.bpmDisplayFontColor
+        bpmDisplay.font = Style.bpmDisplayFont
+        bpmTap.titleLabel?.font = Style.bpmTapFont
+        bpmTap.tintColor = Style.bpmTapFontColor
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

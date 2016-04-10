@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F18c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzU-cb-ZSn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzU-cb-ZSn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -113,9 +113,17 @@
                                     <segue destination="5jF-bY-RA5" kind="show" id="ota-ib-mCn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-H8-f8Q">
+                                <rect key="frame" x="19" y="20" width="48" height="30"/>
+                                <state key="normal" title="Theme"/>
+                                <connections>
+                                    <action selector="changeTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmf-Nw-JMz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97589415311813354" green="0.97606092691421509" blue="0.97588366270065308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Lq9-H8-f8Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9VY-8p-lMg"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9hA-Eq-hKM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" id="AKg-ik-DqM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="lessThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" constant="20" id="LaK-SL-V0g"/>
@@ -124,6 +132,7 @@
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="RpK-Ac-zu3"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aLW-Z1-vaF"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
+                            <constraint firstItem="Lq9-H8-f8Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="iyx-lx-Tcy"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lEQ-me-5HY"/>
                             <constraint firstItem="yhR-Fg-W8i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="lqc-hI-CY3"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMp-hm-7xn"/>

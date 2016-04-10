@@ -33,11 +33,13 @@ struct Style {
     
     // MARK: Dark Color Scheme
     static func themeDark() {
-//        sectionHeaderTitleFont = UIFont(name: "Helvetica", size: 18)
-//        sectionHeaderTitleColor = UIColor.whiteColor()
-//        sectionHeaderBackgroundColor = UIColor.blueColor()
-//        sectionHeaderBackgroundColorHighlighted = UIColor.lightGrayColor()
-//        sectionHeaderAlpha: CGFloat = 0.8
+        backgroundColor = UIColor.init(hue:0.2, saturation:1, brightness:0.975, alpha:1)
+        bpmDisplayFontColor = UIColor.redColor()
+        bpmDisplayFont = UIFont.systemFontOfSize(12)
+        bpmTapFont = UIFont.systemFontOfSize(12)
+        bpmTapFontColor = UIColor.init(hue:0.5, saturation:1, brightness:0.137, alpha:1)
+        bpmTapColor = UIColor.init(hue:0.2, saturation:1, brightness:0.1, alpha:0.25)
+        bpmTapRippleColor = UIColor.init(hue: 0.7, saturation: 1, brightness: 0.8, alpha: 0.5)
     }
     
     
