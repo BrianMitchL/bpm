@@ -18,16 +18,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        if (isLight) {
+            return .LightContent
+        } else {
+            return .Default
+        }
+    }
 
     @IBAction func changeTheme(sender: AnyObject) {
         if (isLight) {
             Style.themeDark()
             isLight = false
+
         } else {
             Style.themeLight()
             isLight = true
         }
-        
+        preferredStatusBarStyle()
         self.view.backgroundColor = Style.backgroundColor
         bpmDisplay.textColor = Style.bpmDisplayFontColor
         bpmDisplay.font = Style.bpmDisplayFont
@@ -39,6 +48,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Set theme
+        preferredStatusBarStyle()
         self.view.backgroundColor = Style.backgroundColor
         bpmDisplay.textColor = Style.bpmDisplayFontColor
         bpmDisplay.font = Style.bpmDisplayFont
