@@ -23,27 +23,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var X: Double = 1         //Initial Duration between the taps
-    var P: Double = 0.1       //Initial confidence in the measurements of the values of x
-    var Q: Double = 0.00001   //Constant error: you know that you are often slow
-    var A: Double = 1         // ------- might be important?
-    var H: Double = 0.001      //How accurately we believe the instrument is measuring
-    var R: Double = 0.00001 //Speed of response to variants
-    
-
-    var lastTime: NSDate? = nil
-    
-
-    @IBAction func bpmTap(sender: BMButton) {
+    func timeDifference() -> Double {
         let currentTime = NSDate()
         if lastTime == nil {
             lastTime = NSDate(timeIntervalSinceNow: -1)
         }
         let timeDiff = currentTime.timeIntervalSinceDate(lastTime!)
-        let calculation = correct(timeDiff)
         lastTime = currentTime
+        return timeDiff
+    }
+    
+    var X: Double = 1        //Initial Duration between the taps
+    var P: Double = 0.1      //Initial confidence in the measurements of the values of x
+    var Q: Double = 0.00001  //Constant error: you know that you are often slow
+    var A: Double = 1        // ------- might be important?
+    var H: Double = 0.001    //How accurately we believe the instrument is measuring
+    var R: Double = 0.0001   //Speed of response to variant
+
+    var lastTime: NSDate? = nil
+    
+    @IBAction func bpmTap(sender: BMButton) {
+        let timeDiff = timeDifference()
+        let calculation = correct(timeDiff)
         bpmDisplay.text = "\(Int(60.0 / calculation))"
     }
+    
+
     
     func predict() {
         X = A * X
