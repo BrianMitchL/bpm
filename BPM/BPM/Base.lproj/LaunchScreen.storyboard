@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,12 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-uC-SED">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WGe-uC-SED" secondAttribute="height" multiplier="1:1" id="rcc-xq-O98"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="BPMIcon.png"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WGe-uC-SED" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T9Q-Z9-wKd"/>
+                            <constraint firstItem="WGe-uC-SED" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="n2c-NS-C72"/>
+                            <constraint firstItem="WGe-uC-SED" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s7p-32-8XR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="153" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BPMIcon.png" width="1024" height="1024"/>
+    </resources>
 </document>
