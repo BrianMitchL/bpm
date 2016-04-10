@@ -39,7 +39,8 @@
         <!--Navigation Controller-->
         <scene sceneID="g4j-sO-XNS">
             <objects>
-                <navigationController id="kzU-cb-ZSn" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="kzU-cb-ZSn" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="84c-np-nx4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -107,7 +108,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-H8-f8Q">
-                                <rect key="frame" x="19" y="20" width="105" height="30"/>
+                                <rect key="frame" x="20" y="562" width="105" height="30"/>
                                 <state key="normal" title="Change Theme"/>
                                 <connections>
                                     <action selector="changeTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmf-Nw-JMz"/>
@@ -116,15 +117,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97589415311813354" green="0.97606092691421509" blue="0.97588366270065308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lq9-H8-f8Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9VY-8p-lMg"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9hA-Eq-hKM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" id="AKg-ik-DqM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="lessThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" constant="20" id="LaK-SL-V0g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lq9-H8-f8Q" secondAttribute="bottom" constant="8" id="OLT-Qf-axx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" id="RWO-R9-34T"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="RpK-Ac-zu3"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aLW-Z1-vaF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Lq9-H8-f8Q" secondAttribute="leading" id="bgM-Xe-KJd"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
-                            <constraint firstItem="Lq9-H8-f8Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="iyx-lx-Tcy"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lEQ-me-5HY"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMp-hm-7xn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="lessThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="40" id="wpL-OG-o6I"/>
