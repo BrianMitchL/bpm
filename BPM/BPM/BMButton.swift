@@ -38,8 +38,9 @@ public class BMButton: UIButton {
     
     override public func drawRect(rect: CGRect) {
         let path = UIBezierPath(ovalInRect: rect)
-        UIColor(hue:0, saturation:0, brightness:0.8, alpha:1).setFill()
+        UIColor(hue:0, saturation:0, brightness:0.8, alpha:0.5).setFill()
         path.fill()
+        self.tintColor = UIColor.whiteColor()
     }
     
     @IBInspectable public var ripplePercent: Float = 0.8 {

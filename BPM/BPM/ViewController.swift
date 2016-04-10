@@ -20,8 +20,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        self.view.backgroundColor = UIColor.brownColor()
+        
+        // Set theme
+        self.view.backgroundColor = Style.backgroundColor
+        bpmDisplay.textColor = Style.bpmDisplayFontColor
+        bpmDisplay.font = Style.bpmDisplayFont
+        bpmTap.titleLabel?.font = Style.bpmTapFont
+        bpmTap.tintColor = Style.bpmTapFontColor //might not be working
+//        bpmTap. = Style.bpmTapColor
     }
 
     override func didReceiveMemoryWarning() {
