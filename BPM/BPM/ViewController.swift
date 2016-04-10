@@ -15,7 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -31,6 +30,7 @@ class ViewController: UIViewController {
     var H: Double = 0.001      //How accurately we believe the instrument is measuring
     var R: Double = 0.00001 //Speed of response to variants
     
+
     var lastTime: NSDate? = nil
     
 
@@ -57,12 +57,6 @@ class ViewController: UIViewController {
         P = (1 - K) * P
         return X
     }
-    
-//    func calculateBPM(timeDiff: NSTimeInterval, average: Double, newCount: Int) -> Double {
-//        if newCount > 2 {
-//            count = 1
-//        }
-//        return ((60/timeDiff) + Double(average) * Double(newCount)) / Double(newCount + 1)
-//    }
+
 }
 
