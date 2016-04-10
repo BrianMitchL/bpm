@@ -24,7 +24,7 @@
                                     <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.16860446333885193" green="0.16864064335823059" blue="0.16860216856002808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
@@ -37,11 +37,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Tap">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.16860446333885193" green="0.16864064335823059" blue="0.16860216856002808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
-                                        <color key="value" red="0.53687459230422974" green="0.53697031736373901" blue="0.53686851263046265" alpha="0.50232568641618502" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.89990204572677612" green="0.90005642175674438" blue="0.89989227056503296" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRippleRadius">
@@ -60,17 +60,23 @@
                                     <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhR-Fg-W8i" userLabel="Settings">
+                                <rect key="frame" x="531" y="30" width="39" height="42"/>
+                                <state key="normal" image="gear_dark"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97618585824966431" green="0.9763527512550354" blue="0.97617536783218384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97636479139328003" green="0.97653168439865112" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9hA-Eq-hKM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" id="AKg-ik-DqM"/>
-                            <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DLK-pf-MED"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="lessThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" constant="20" id="LaK-SL-V0g"/>
+                            <constraint firstItem="yhR-Fg-W8i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="O9c-gx-ji9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" id="RWO-R9-34T"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="RpK-Ac-zu3"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aLW-Z1-vaF"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lEQ-me-5HY"/>
+                            <constraint firstItem="yhR-Fg-W8i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="lqc-hI-CY3"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMp-hm-7xn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="lessThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" constant="40" id="wpL-OG-o6I"/>
                         </constraints>
@@ -83,5 +89,36 @@
             </objects>
             <point key="canvasLocation" x="276" y="396"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="oPO-jO-VRx">
+            <objects>
+                <tableViewController id="5A4-tS-jSD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C57-0l-YXx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xIH-UV-fEB">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xIH-UV-fEB" id="hxc-38-IQ9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5A4-tS-jSD" id="fMZ-WG-H7G"/>
+                            <outlet property="delegate" destination="5A4-tS-jSD" id="OD9-hu-ocQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJT-V2-RNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="1052"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="gear_dark" width="39" height="42"/>
+    </resources>
 </document>

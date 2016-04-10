@@ -38,7 +38,7 @@ public class BMButton: UIButton {
     
     override public func drawRect(rect: CGRect) {
         let path = UIBezierPath(ovalInRect: rect)
-        UIColor(hue:0, saturation:0, brightness:0.5, alpha:0.5).setFill()
+        UIColor(hue:0, saturation:0, brightness:0.8, alpha:1).setFill()
         path.fill()
     }
     
