@@ -19,24 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        if (isLight) {
-            return .LightContent
-        } else {
-            return .Default
-        }
-    }
 
     @IBAction func changeTheme(sender: AnyObject) {
         if (isLight) {
             Style.themeDark()
             isLight = false
+            UIApplication.sharedApplication().statusBarStyle = .LightContent
 
         } else {
             Style.themeLight()
             isLight = true
+            UIApplication.sharedApplication().statusBarStyle = .Default
         }
-        preferredStatusBarStyle()
         self.view.backgroundColor = Style.backgroundColor
         bpmDisplay.textColor = Style.bpmDisplayFontColor
         bpmDisplay.font = Style.bpmDisplayFont
@@ -87,8 +81,6 @@ class ViewController: UIViewController {
         bpmDisplay.text = "\(Int(60.0 / calculation))"
     }
     
-
-    
     func predict() {
         X = A * X
         P = A * P + Q
@@ -101,6 +93,5 @@ class ViewController: UIViewController {
         P = (1 - K) * P
         return X
     }
-
 }
 
