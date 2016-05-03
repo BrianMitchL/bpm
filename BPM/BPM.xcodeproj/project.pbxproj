@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		200D3D161CB9E8B70040982D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D3D151CB9E8B70040982D /* MenuViewController.swift */; };
-		20AC2B6D1CBA49B90007E295 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC2B6C1CBA49B90007E295 /* MenuTableViewController.swift */; };
-		20AC2B6F1CBA4C5F0007E295 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC2B6E1CBA4C5F0007E295 /* Menu.swift */; };
 		961D7A7D1CB9774B007BA96C /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D7A7C1CB9774B007BA96C /* BMButton.swift */; };
 		9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D51CB8A223007D2041 /* AppDelegate.swift */; };
 		9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625F1D71CB8A223007D2041 /* ViewController.swift */; };
@@ -40,8 +38,6 @@
 
 /* Begin PBXFileReference section */
 		200D3D151CB9E8B70040982D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		20AC2B6C1CBA49B90007E295 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		20AC2B6E1CBA4C5F0007E295 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		961D7A7C1CB9774B007BA96C /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		9625F1D21CB8A223007D2041 /* BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9625F1D51CB8A223007D2041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				9625F1D51CB8A223007D2041 /* AppDelegate.swift */,
-				20AC2B6C1CBA49B90007E295 /* MenuTableViewController.swift */,
-				20AC2B6E1CBA4C5F0007E295 /* Menu.swift */,
 				9625F1D71CB8A223007D2041 /* ViewController.swift */,
 				200D3D151CB9E8B70040982D /* MenuViewController.swift */,
 				9625F1D91CB8A223007D2041 /* Main.storyboard */,
@@ -276,8 +270,6 @@
 			files = (
 				9625F1D81CB8A223007D2041 /* ViewController.swift in Sources */,
 				961D7A7D1CB9774B007BA96C /* BMButton.swift in Sources */,
-				20AC2B6F1CBA4C5F0007E295 /* Menu.swift in Sources */,
-				20AC2B6D1CBA49B90007E295 /* MenuTableViewController.swift in Sources */,
 				9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */,
 				200D3D161CB9E8B70040982D /* MenuViewController.swift in Sources */,
 				96CB9E481CBA1A8400D82534 /* Style.swift in Sources */,
