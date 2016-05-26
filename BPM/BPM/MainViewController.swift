@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  BPM
 //
 //  Created by Brian Mitchell and Zach Litzinger on 4/8/16.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     var loadTheme: Bool = {
         Style.loadTheme()
         return true
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
     
-
     @IBAction func changeTheme(sender: AnyObject) {
         if (isLight) {
             Style.themeDark()

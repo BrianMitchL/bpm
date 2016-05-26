@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,19 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-uC-SED">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="WGe-uC-SED" secondAttribute="height" multiplier="1:1" id="rcc-xq-O98"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="BPMIcon.png"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-MK-GOx">
+                                <rect key="frame" x="227" y="40" width="147" height="86"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" red="0.16860446330000001" green="0.16864064340000001" blue="0.16860216859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WGe-uC-SED" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T9Q-Z9-wKd"/>
-                            <constraint firstItem="WGe-uC-SED" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="n2c-NS-C72"/>
-                            <constraint firstItem="WGe-uC-SED" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s7p-32-8XR"/>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-217" id="9Tv-bb-e1p">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-117"/>
+                            </constraint>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="top" relation="lessThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="JlW-uk-bDw"/>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rdh-8v-4A5"/>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="zOr-AV-HUQ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,7 +43,4 @@
             <point key="canvasLocation" x="153" y="307"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="BPMIcon.png" width="1024" height="1024"/>
-    </resources>
 </document>
