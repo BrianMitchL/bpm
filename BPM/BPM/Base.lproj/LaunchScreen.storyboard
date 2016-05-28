@@ -29,12 +29,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-217" id="9Tv-bb-e1p">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-117"/>
-                            </constraint>
-                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="top" relation="lessThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="JlW-uk-bDw"/>
-                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rdh-8v-4A5"/>
-                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="zOr-AV-HUQ"/>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BRe-Vq-bwR"/>
+                            <constraint firstItem="zXZ-MK-GOx" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="hux-5A-zEx"/>
                         </constraints>
                     </view>
                 </viewController>

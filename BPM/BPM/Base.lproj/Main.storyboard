@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -60,33 +62,23 @@
                                     <action selector="bpmTap:" destination="BYZ-38-t0r" eventType="touchDown" id="isz-qg-r3X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-H8-f8Q">
-                                <rect key="frame" x="20" y="562" width="105" height="30"/>
-                                <state key="normal" title="Change Theme"/>
-                                <connections>
-                                    <action selector="changeTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmf-Nw-JMz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-Gq-65Q">
                                 <rect key="frame" x="531" y="0.0" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="z4w-Wr-DAY" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="Vc1-R7-2dY"/>
+                                    <segue destination="z4w-Wr-DAY" kind="presentation" id="Ldi-ME-C10"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97589415311813354" green="0.97606092691421509" blue="0.97588366270065308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G8G-Gq-65Q" secondAttribute="bottom" constant="8" id="5GK-fa-3yc"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9hA-Eq-hKM"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" id="AKg-ik-DqM"/>
                             <constraint firstItem="G8G-Gq-65Q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="Jyb-8g-zXo"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="top" relation="lessThanOrEqual" secondItem="eqN-nT-QkB" secondAttribute="bottom" constant="20" id="LaK-SL-V0g"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lq9-H8-f8Q" secondAttribute="bottom" constant="8" id="OLT-Qf-axx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="bottom" id="RWO-R9-34T"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUD-8N-RYU" secondAttribute="trailing" constant="20" id="RpK-Ac-zu3"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="aLW-Z1-vaF"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Lq9-H8-f8Q" secondAttribute="leading" id="bgM-Xe-KJd"/>
                             <constraint firstItem="eqN-nT-QkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcq-48-D1t"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lEQ-me-5HY"/>
                             <constraint firstItem="bUD-8N-RYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMp-hm-7xn"/>
@@ -113,33 +105,83 @@
         <!--Settings View Controller-->
         <scene sceneID="yZ5-tn-MJY">
             <objects>
-                <viewController id="z4w-Wr-DAY" customClass="SettingsViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="z4w-Wr-DAY" customClass="SettingsViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tfo-Ul-CKK"/>
                         <viewControllerLayoutGuide type="bottom" id="bzW-jf-zuU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gQB-Uk-M2N">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="gQB-Uk-M2N">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-tE-MEe">
-                                <rect key="frame" x="543" y="0.0" width="37" height="30"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="done:" destination="z4w-Wr-DAY" eventType="touchUpInside" id="IRC-HM-gYB"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-SZ-q5c">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Settings" id="BEA-2Y-5ZD">
+                                        <barButtonItem key="leftBarButtonItem" image="Heart" id="YQ2-DP-q3h">
+                                            <color key="tintColor" red="0.99949020147323608" green="0.068877816200256348" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="heart:" destination="z4w-Wr-DAY" id="pAj-qI-7gO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z5a-DX-d3O">
+                                            <connections>
+                                                <action selector="done:" destination="z4w-Wr-DAY" id="Fhz-M9-YpO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-OO-0jT">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-oc-mMi">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="137"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="137" id="KqJ-Qf-hEf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="z4w-Wr-DAY" id="VDk-BS-enm"/>
+                                            <outlet property="delegate" destination="z4w-Wr-DAY" id="ete-b4-vCM"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="top" secondItem="zOO-OO-0jT" secondAttribute="firstBaseline" id="2k7-4Y-7Ms"/>
+                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="trailing" secondItem="zOO-OO-0jT" secondAttribute="trailingMargin" constant="8" id="D3k-kB-Z1h"/>
+                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="centerX" secondItem="zOO-OO-0jT" secondAttribute="centerX" id="GMl-KU-Obz"/>
+                                    <constraint firstAttribute="bottom" secondItem="HKO-oc-mMi" secondAttribute="bottom" constant="419" id="PlZ-7l-WZj"/>
+                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="leading" secondItem="zOO-OO-0jT" secondAttribute="leadingMargin" constant="-8" id="qrg-P7-Hwz"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="Settings">
+                            <accessibilityTraits key="traits" none="YES"/>
+                        </accessibility>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="yuu-tE-MEe" secondAttribute="trailing" id="PJJ-YL-jlL"/>
-                            <constraint firstItem="yuu-tE-MEe" firstAttribute="top" secondItem="Tfo-Ul-CKK" secondAttribute="bottom" id="sEL-0I-GHa"/>
+                            <constraint firstItem="zOO-OO-0jT" firstAttribute="bottom" secondItem="bzW-jf-zuU" secondAttribute="top" id="3TE-Ng-dSA"/>
+                            <constraint firstItem="zOO-OO-0jT" firstAttribute="top" secondItem="KrS-SZ-q5c" secondAttribute="top" constant="44" id="KUz-1L-JDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="KrS-SZ-q5c" secondAttribute="trailing" id="Q7m-ws-MTD"/>
+                            <constraint firstItem="zOO-OO-0jT" firstAttribute="leading" secondItem="KrS-SZ-q5c" secondAttribute="leading" id="V37-5I-xpV"/>
+                            <constraint firstItem="KrS-SZ-q5c" firstAttribute="top" secondItem="Tfo-Ul-CKK" secondAttribute="bottom" id="hMV-K7-44S"/>
+                            <constraint firstItem="zOO-OO-0jT" firstAttribute="trailing" secondItem="KrS-SZ-q5c" secondAttribute="trailing" id="jJc-zf-NFz"/>
+                            <constraint firstItem="KrS-SZ-q5c" firstAttribute="leading" secondItem="gQB-Uk-M2N" secondAttribute="leading" id="vwM-Ib-RXr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="themes" destination="HKO-oc-mMi" id="yh0-ne-fKR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nk-DM-Htg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="341"/>
+            <point key="canvasLocation" x="948" y="341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Heart" width="18" height="18"/>
+    </resources>
 </document>

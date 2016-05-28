@@ -14,45 +14,34 @@ class MainViewController: UIViewController {
         Style.loadTheme()
         return true
     }()
-    var isLight = true
     
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
     
-    @IBAction func changeTheme(sender: AnyObject) {
-        if (isLight) {
-            Style.themeDark()
-            isLight = false
-            UIApplication.sharedApplication().statusBarStyle = .LightContent
-
-        } else {
-            Style.themeLight()
-            isLight = true
-            UIApplication.sharedApplication().statusBarStyle = .Default
-        }
-        self.view.backgroundColor = Style.backgroundColor
-        bpmDisplay.textColor = Style.bpmDisplayFontColor
-        bpmDisplay.font = Style.bpmDisplayFont
-        bpmTap.titleLabel?.font = Style.bpmTapFont
-        bpmTap.tintColor = Style.bpmTapFontColor
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set theme
-        preferredStatusBarStyle()
-        self.view.backgroundColor = Style.backgroundColor
-        bpmDisplay.textColor = Style.bpmDisplayFontColor
-        bpmDisplay.font = Style.bpmDisplayFont
-        bpmTap.titleLabel?.font = Style.bpmTapFont
-        bpmTap.tintColor = Style.bpmTapFontColor //might not be working
-//        bpmTap. = Style.bpmTapColor
+        updateTheme()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTheme()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateTheme() {
+        self.view.backgroundColor = Style.backgroundColor
+        UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
+        bpmDisplay.textColor = Style.bpmDisplayFontColor
+        bpmDisplay.font = Style.bpmDisplayFont
+        bpmTap.titleLabel?.font = Style.bpmTapFont
+        bpmTap.tintColor = Style.bpmTapFontColor //might not be working
+        //        bpmTap. = Style.bpmTapColor
     }
     
     func timeDifference() -> Double {
