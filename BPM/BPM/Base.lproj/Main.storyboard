@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -66,7 +64,7 @@
                                 <rect key="frame" x="531" y="0.0" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="z4w-Wr-DAY" kind="presentation" id="Ldi-ME-C10"/>
+                                    <segue destination="LuT-lA-khH" kind="presentation" modalTransitionStyle="flipHorizontal" id="3H6-Jm-ecY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="216" y="341"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="yZ5-tn-MJY">
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="z4w-Wr-DAY" customClass="SettingsViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,69 +112,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-SZ-q5c">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Settings" id="BEA-2Y-5ZD">
-                                        <barButtonItem key="leftBarButtonItem" image="Heart" id="YQ2-DP-q3h">
-                                            <color key="tintColor" red="0.99949020147323608" green="0.068877816200256348" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="heart:" destination="z4w-Wr-DAY" id="pAj-qI-7gO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z5a-DX-d3O">
-                                            <connections>
-                                                <action selector="done:" destination="z4w-Wr-DAY" id="Fhz-M9-YpO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-OO-0jT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-oc-mMi">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKO-oc-mMi">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="137"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="137" id="KqJ-Qf-hEf"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="dataSource" destination="z4w-Wr-DAY" id="VDk-BS-enm"/>
-                                            <outlet property="delegate" destination="z4w-Wr-DAY" id="ete-b4-vCM"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="top" secondItem="zOO-OO-0jT" secondAttribute="firstBaseline" id="2k7-4Y-7Ms"/>
-                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="trailing" secondItem="zOO-OO-0jT" secondAttribute="trailingMargin" constant="8" id="D3k-kB-Z1h"/>
-                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="centerX" secondItem="zOO-OO-0jT" secondAttribute="centerX" id="GMl-KU-Obz"/>
-                                    <constraint firstAttribute="bottom" secondItem="HKO-oc-mMi" secondAttribute="bottom" constant="419" id="PlZ-7l-WZj"/>
-                                    <constraint firstItem="HKO-oc-mMi" firstAttribute="leading" secondItem="zOO-OO-0jT" secondAttribute="leadingMargin" constant="-8" id="qrg-P7-Hwz"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z4w-Wr-DAY" id="VDk-BS-enm"/>
+                                    <outlet property="delegate" destination="z4w-Wr-DAY" id="ete-b4-vCM"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <accessibility key="accessibilityConfiguration" label="Settings">
                             <accessibilityTraits key="traits" none="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="zOO-OO-0jT" firstAttribute="bottom" secondItem="bzW-jf-zuU" secondAttribute="top" id="3TE-Ng-dSA"/>
-                            <constraint firstItem="zOO-OO-0jT" firstAttribute="top" secondItem="KrS-SZ-q5c" secondAttribute="top" constant="44" id="KUz-1L-JDQ"/>
-                            <constraint firstAttribute="trailing" secondItem="KrS-SZ-q5c" secondAttribute="trailing" id="Q7m-ws-MTD"/>
-                            <constraint firstItem="zOO-OO-0jT" firstAttribute="leading" secondItem="KrS-SZ-q5c" secondAttribute="leading" id="V37-5I-xpV"/>
-                            <constraint firstItem="KrS-SZ-q5c" firstAttribute="top" secondItem="Tfo-Ul-CKK" secondAttribute="bottom" id="hMV-K7-44S"/>
-                            <constraint firstItem="zOO-OO-0jT" firstAttribute="trailing" secondItem="KrS-SZ-q5c" secondAttribute="trailing" id="jJc-zf-NFz"/>
-                            <constraint firstItem="KrS-SZ-q5c" firstAttribute="leading" secondItem="gQB-Uk-M2N" secondAttribute="leading" id="vwM-Ib-RXr"/>
+                            <constraint firstItem="HKO-oc-mMi" firstAttribute="bottom" secondItem="bzW-jf-zuU" secondAttribute="top" id="73x-Fy-p86"/>
+                            <constraint firstItem="HKO-oc-mMi" firstAttribute="leading" secondItem="gQB-Uk-M2N" secondAttribute="leading" id="gjL-Di-yV5"/>
+                            <constraint firstItem="HKO-oc-mMi" firstAttribute="top" secondItem="Tfo-Ul-CKK" secondAttribute="bottom" id="uV1-G8-7nS"/>
+                            <constraint firstAttribute="trailing" secondItem="HKO-oc-mMi" secondAttribute="trailing" id="vAB-mh-geY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="iKt-Ns-4f9">
+                        <barButtonItem key="leftBarButtonItem" image="Heart" id="YQ2-DP-q3h">
+                            <color key="tintColor" red="0.99949020147323608" green="0.068877816200256348" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="heart:" destination="z4w-Wr-DAY" id="pAj-qI-7gO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z5a-DX-d3O">
+                            <connections>
+                                <action selector="done:" destination="z4w-Wr-DAY" id="Fhz-M9-YpO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="themes" destination="HKO-oc-mMi" id="yh0-ne-fKR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nk-DM-Htg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sKj-O0-BPz">
+            <objects>
+                <navigationController storyboardIdentifier="settingsNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LuT-lA-khH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YHD-Kp-fwO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z4w-Wr-DAY" kind="relationship" relationship="rootViewController" id="LMU-bn-6f1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uax-nu-yxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="341"/>
         </scene>

@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func heart(sender: AnyObject) {
-        let text: String = "Check out BPM - Find Tempos in Style"
+        let text: String = "Check out BPM - Find Tempos in Style!"
         let url = NSURL(string: "https://brianm.me")
         let activityVC = UIActivityViewController(activityItems: [text, url!], applicationActivities: nil)
         
