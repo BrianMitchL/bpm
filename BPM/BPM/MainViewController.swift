@@ -40,8 +40,8 @@ class MainViewController: UIViewController {
         bpmDisplay.textColor = Style.bpmDisplayFontColor
         bpmDisplay.font = Style.bpmDisplayFont
         bpmTap.titleLabel?.font = Style.bpmTapFont
-        bpmTap.tintColor = Style.bpmTapFontColor //might not be working
-        //        bpmTap. = Style.bpmTapColor
+        bpmTap.setTitleColor(Style.bpmTapFontColor, forState: UIControlState.Normal)
+        bpmTap.strokeColor = Style.bpmTapColor
     }
     
     func timeDifference() -> Double {
