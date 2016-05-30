@@ -37,12 +37,13 @@ class MainViewController: UIViewController {
     func updateTheme() {
         self.view.backgroundColor = Style.backgroundColor
         UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
-        bpmDisplay.textColor = Style.bpmDisplayFontColor
+        bpmDisplay.textColor = Style.tintColor
         bpmDisplay.font = Style.bpmDisplayFont
         bpmTap.titleLabel?.font = Style.bpmTapFont
-        bpmTap.setTitleColor(Style.bpmTapFontColor, forState: UIControlState.Normal)
+        bpmTap.setTitleColor(Style.tintColor, forState: UIControlState.Normal)
         bpmTap.strokeColor = Style.bpmTapColor
         bpmTap.rippleColor = Style.bpmTapRippleColor
+        self.view.tintColor = Style.tintColor
     }
     
     func timeDifference() -> Double {
