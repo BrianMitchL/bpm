@@ -20,7 +20,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func heart(sender: AnyObject) {
         let text: String = "Check out BPM - Find Tempos in Style!"
-        let url = NSURL(string: "https://brianm.me")
+        let url = NSURL(string: "https://getbpm.xyz")
         let activityVC = UIActivityViewController(activityItems: [text, url!], applicationActivities: nil)
         
         self.presentViewController(activityVC, animated: true, completion: nil)
