@@ -41,6 +41,21 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    //Fill TableView
+    
+    let sections = ["Developers", "Themes", "Acknowledgements"]
+    let developers = ["Brian Mitchell", "Zach Litzinger"]
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return self.sections[section]
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return self.sections.count
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Style.availableThemes.count;
     }

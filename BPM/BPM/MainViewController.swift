@@ -42,6 +42,7 @@ class MainViewController: UIViewController {
         bpmTap.titleLabel?.font = Style.bpmTapFont
         bpmTap.setTitleColor(Style.bpmTapFontColor, forState: UIControlState.Normal)
         bpmTap.strokeColor = Style.bpmTapColor
+        bpmTap.rippleColor = Style.bpmTapRippleColor
     }
     
     func timeDifference() -> Double {
