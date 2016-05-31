@@ -46,6 +46,35 @@ class MainViewController: UIViewController {
         self.view.tintColor = Style.tintColor
     }
     
+    // BPM logic and functionality
+    
+    var X: Double = 0.0
+    var P: Double = 0.0
+    var Q: Double = 0.0
+    var A: Double = 0.0
+    var H: Double = 0.0
+    var R: Double = 0.0
+    var lastTime: NSDate? = nil
+    
+    func initBPM() {
+        X = 1        //Initial Duration between the taps
+        P = 0.1      //Initial confidence in the measurements of the values of x
+        Q = 0.00001  //Constant error: you know that you are often slow
+        A = 1        // ------- might be important?
+        H = 0.001    //How accurately we believe the instrument is measuring
+        R = 0.0001   //Speed of response to variant
+        lastTime = nil
+    }
+    
+    @IBAction func bpmTap(sender: BMButton) {
+        if lastTime?.timeIntervalSinceNow < -5.0 {
+            initBPM()
+        }
+        let timeDiff = timeDifference()
+        let calculation = correct(timeDiff)
+        bpmDisplay.text = "\(Int(60.0 / calculation))"
+    }
+    
     func timeDifference() -> Double {
         let currentTime = NSDate()
         if lastTime == nil {
@@ -54,21 +83,6 @@ class MainViewController: UIViewController {
         let timeDiff = currentTime.timeIntervalSinceDate(lastTime!)
         lastTime = currentTime
         return timeDiff
-    }
-    
-    var X: Double = 1        //Initial Duration between the taps
-    var P: Double = 0.1      //Initial confidence in the measurements of the values of x
-    var Q: Double = 0.00001  //Constant error: you know that you are often slow
-    var A: Double = 1        // ------- might be important?
-    var H: Double = 0.001    //How accurately we believe the instrument is measuring
-    var R: Double = 0.0001   //Speed of response to variant
-
-    var lastTime: NSDate? = nil
-    
-    @IBAction func bpmTap(sender: BMButton) {
-        let timeDiff = timeDifference()
-        let calculation = correct(timeDiff)
-        bpmDisplay.text = "\(Int(60.0 / calculation))"
     }
     
     func predict() {
