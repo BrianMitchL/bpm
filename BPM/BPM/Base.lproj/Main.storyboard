@@ -144,6 +144,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="heart" destination="YQ2-DP-q3h" id="XH3-wm-Gb5"/>
                         <outlet property="themes" destination="HKO-oc-mMi" id="yh0-ne-fKR"/>
                     </connections>
                 </viewController>

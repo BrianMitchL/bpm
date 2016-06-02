@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
+    @IBOutlet weak var heart: UIBarButtonItem!
     @IBAction func heart(sender: AnyObject) {
         let text: String = "Check out BPM - Find Tempos in Style!"
         let url = NSURL(string: "https://getbpm.xyz")
@@ -96,8 +97,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.view.backgroundColor = Style.backgroundColor
         UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
         self.view.tintColor = Style.tintColor
-        self.themes.sectionIndexBackgroundColor = Style.tableBackground
-        self.themes.separatorColor = Style.tableSeparatorColor
+        self.themes.backgroundColor = Style.backgroundColor
+//        self.themes.separatorColor = Style.tableSeparatorColor
+        UINavigationBar.appearance().backgroundColor = Style.backgroundColor
+        UIBarButtonItem.appearance().tintColor = Style.tintColor
+        heart.tintColor = UIColor.redColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : Style.tintColor]
+        UINavigationBar.appearance().barTintColor = Style.backgroundColor
     }
     
 
