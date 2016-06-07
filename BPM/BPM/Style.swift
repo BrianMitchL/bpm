@@ -19,7 +19,7 @@ struct Style {
     static var bpmTapRippleColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.8, alpha: 0.5)
     static var bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.8, alpha:0.5)
     static var tintColor = UIColor.darkGrayColor()
-    static var tableBackground = UIColor.lightGrayColor()
+    static var tableCellBackground = UIColor.lightGrayColor()
     static var tableSeparatorColor = UIColor.grayColor()
     
     
@@ -33,7 +33,7 @@ struct Style {
         bpmTapRippleColor = UIColor(hue: 0, saturation: 0, brightness: 0.8, alpha: 0.5)
         bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.8, alpha:0.5)
         tintColor = UIColor.darkGrayColor()
-        tableBackground = UIColor(red:0.937255, green:0.937255, blue:0.956863, alpha:1)
+        tableCellBackground = UIColor(red:0.937255, green:0.937255, blue:0.956863, alpha:1)
         tableSeparatorColor = UIColor.grayColor()
     }
     
@@ -47,8 +47,8 @@ struct Style {
         bpmTapRippleColor = UIColor(hue: 0, saturation: 0, brightness: 0.2, alpha: 0.5)
         bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.2, alpha:0.5)
         tintColor = UIColor.lightTextColor()
-        tableBackground = UIColor.darkGrayColor()
-        tableSeparatorColor = UIColor.grayColor()
+        tableCellBackground = UIColor(hue:0, saturation:0, brightness:0.2, alpha:1)
+        tableSeparatorColor = UIColor.darkGrayColor()
     }
     
     

@@ -65,6 +65,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell:UITableViewCell = self.themes.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
         cell.textLabel?.text = Style.availableThemes[indexPath.row]
+        cell.textLabel?.textColor = Style.tintColor
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -84,7 +85,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(selection, forKey: "Theme")
         Style.loadTheme()
-        updateTheme()
+//        updateTheme()
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
@@ -98,12 +99,15 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
         self.view.tintColor = Style.tintColor
         self.themes.backgroundColor = Style.backgroundColor
-//        self.themes.separatorColor = Style.tableSeparatorColor
+        self.themes.separatorColor = Style.tableSeparatorColor
         UINavigationBar.appearance().backgroundColor = Style.backgroundColor
         UIBarButtonItem.appearance().tintColor = Style.tintColor
-        heart.tintColor = UIColor.redColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : Style.tintColor]
         UINavigationBar.appearance().barTintColor = Style.backgroundColor
+        UITableView.appearance().tintColor = Style.tintColor
+        UITableViewCell.appearance().backgroundColor = Style.tableCellBackground
+        UITableViewCell.appearance().tintColor = Style.tintColor
+//        heart.tintColor = UIColor.redColor()
     }
     
 
