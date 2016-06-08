@@ -1,6 +1,5 @@
-# bpm
-![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+# bpm ![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A BPM (beat per minute app) written with Swift 2.2.
 
 # Authors
