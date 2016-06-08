@@ -8,60 +8,93 @@
 
 import Foundation
 import UIKit
+import ChameleonFramework
 
 // much help from http://sdbr.net/post/Themes-in-Swift/
 struct Style {
-    static var backgroundColor = UIColor(hue:0, saturation:0, brightness:0.98, alpha:1)
-    static var statusbarStyle = UIStatusBarStyle.Default
-    static var bpmDisplayFont = UIFont.systemFontOfSize(72)
-    static var bpmTapFont = UIFont.systemFontOfSize(32)
-    static var bpmTapBackgroundColor = UIColor(hue:0, saturation:0, brightness:0.1, alpha:0.25)
-    static var bpmTapRippleColor = UIColor(hue: 0.0, saturation: 0.0, brightness: 0.8, alpha: 0.5)
-    static var bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.8, alpha:0.5)
-    static var tintColor = UIColor.darkGrayColor()
-    static var tableCellBackground = UIColor.lightGrayColor()
-    static var tableSeparatorColor = UIColor.grayColor()
+    static var primary = UIColor.flatWhiteColor()
+    static var isFlat = true
+    static var colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
     
-    
-    // MARK: Light Color Scheme
-    static func themeLight() {
-        backgroundColor = UIColor(hue:0, saturation:0, brightness:0.98, alpha:1)
-        statusbarStyle = UIStatusBarStyle.Default
-        bpmDisplayFont = UIFont.systemFontOfSize(72)
-        bpmTapFont = UIFont.systemFontOfSize(32)
-        bpmTapBackgroundColor = UIColor(hue:0, saturation:0, brightness:0.1, alpha:0.25)
-        bpmTapRippleColor = UIColor(hue: 0, saturation: 0, brightness: 0.8, alpha: 0.5)
-        bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.8, alpha:0.5)
-        tintColor = UIColor.darkGrayColor()
-        tableCellBackground = UIColor(red:0.937255, green:0.937255, blue:0.956863, alpha:1)
-        tableSeparatorColor = UIColor.grayColor()
+    // MARK: White Color Scheme
+    static func themeWhite() {
+        primary = UIColor.flatWhiteColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[1] = primary.darkenByPercentage(0.15)
     }
     
-    // MARK: Dark Color Scheme
-    static func themeDark() {
-        backgroundColor = UIColor(hue:0, saturation:0, brightness:0.1, alpha:1)
-        statusbarStyle = UIStatusBarStyle.LightContent
-        bpmDisplayFont = UIFont.systemFontOfSize(72)
-        bpmTapFont = UIFont.systemFontOfSize(32)
-        bpmTapBackgroundColor = UIColor(hue:0, saturation:0, brightness:0.9, alpha:0.25)
-        bpmTapRippleColor = UIColor(hue: 0, saturation: 0, brightness: 0.2, alpha: 0.5)
-        bpmTapColor = UIColor(hue:0, saturation:0, brightness:0.2, alpha:0.5)
-        tintColor = UIColor.lightTextColor()
-        tableCellBackground = UIColor(hue:0, saturation:0, brightness:0.2, alpha:1)
-        tableSeparatorColor = UIColor.darkGrayColor()
+    // MARK: Black Color Scheme
+    static func themeBlack() {
+        primary = UIColor.flatBlackColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[1] = primary.darkenByPercentage(0.1)
+    }
+    
+    // MARK: Red Color Scheme
+    static func themeRed() {
+        primary = UIColor.flatRedColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[3] = colorArray[3].lightenByPercentage(0.1)
+    }
+    
+    // MARK: Orange Color Scheme
+    static func themeOrange() {
+        primary = UIColor.flatOrangeColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[3] = colorArray[3].darkenByPercentage(0.1)
+    }
+    
+    // MARK: Yellow Color Scheme
+    static func themeYellow() {
+        primary = UIColor.flatYellowColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[3] = primary.darkenByPercentage(0.1)
+    }
+    
+    // MARK: Sand Color Scheme
+    static func themeSand() {
+        primary = UIColor.flatSandColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+    }
+    
+    // MARK: Navy Blue Color Scheme
+    static func themeNavyBlue() {
+        primary = UIColor.flatNavyBlueColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+    }
+    
+    // MARK: Magenta Color Scheme
+    static func themeMagenta() {
+        primary = UIColor.flatMagentaColor()
+        isFlat = true
+        colorArray = ColorSchemeOf(ColorScheme.Analogous, color: primary, isFlatScheme: isFlat)
+        colorArray[1] = primary.darkenByPercentage(0.15)
     }
     
     
-    static let availableThemes = ["Light", "Dark"]
+    static let availableThemes = ["White", "Black", "Red", "Orange", "Yellow", "Sand", "Navy Blue", "Magenta"]
     static func loadTheme() {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let name = defaults.stringForKey("Theme") {
             // Select the Theme
-            if name == "Light"		{ themeLight()	}
-            if name == "Dark"       { themeDark()	}
+            if name == "White"      { themeWhite()	  }
+            if name == "Black"      { themeBlack()	  }
+            if name == "Red"        { themeRed()      }
+            if name == "Orange"     { themeOrange()   }
+            if name == "Yellow"     { themeYellow()   }
+            if name == "Sand"       { themeSand()     }
+            if name == "Navy Blue"  { themeNavyBlue() }
+            if name == "Magenta"    { themeMagenta()  }
         } else {
-            defaults.setObject("Light", forKey: "Theme")
-            themeLight()
+            defaults.setObject("White", forKey: "Theme")
+            themeWhite()
         }
     }
 }

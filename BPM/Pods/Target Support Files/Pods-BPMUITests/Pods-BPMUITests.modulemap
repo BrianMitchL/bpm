@@ -1,0 +1,6 @@
+framework module Pods_BPMUITests {
+  umbrella header "Pods-BPMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

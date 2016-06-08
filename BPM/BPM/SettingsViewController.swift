@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var loadTheme: Bool = {
@@ -18,7 +19,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
-    @IBOutlet weak var heart: UIBarButtonItem!
     @IBAction func heart(sender: AnyObject) {
         let text: String = "Check out BPM - Find Tempos in Style!"
         let url = NSURL(string: "https://getbpm.xyz")
@@ -65,7 +65,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell:UITableViewCell = self.themes.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
         cell.textLabel?.text = Style.availableThemes[indexPath.row]
-        cell.textLabel?.textColor = Style.tintColor
+        cell.textLabel?.textColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -95,19 +95,17 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     
     func updateTheme() {
-        self.view.backgroundColor = Style.backgroundColor
-        UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
-        self.view.tintColor = Style.tintColor
-        self.themes.backgroundColor = Style.backgroundColor
-        self.themes.separatorColor = Style.tableSeparatorColor
-        UINavigationBar.appearance().backgroundColor = Style.backgroundColor
-        UIBarButtonItem.appearance().tintColor = Style.tintColor
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : Style.tintColor]
-        UINavigationBar.appearance().barTintColor = Style.backgroundColor
-        UITableView.appearance().tintColor = Style.tintColor
-        UITableViewCell.appearance().backgroundColor = Style.tableCellBackground
-        UITableViewCell.appearance().tintColor = Style.tintColor
-//        heart.tintColor = UIColor.redColor()
+        self.setStatusBarStyle(UIStatusBarStyleContrast) //TODO: fix this in settings view
+        self.view.backgroundColor = Style.colorArray[2]
+        self.view.tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
+        self.themes.backgroundColor = Style.colorArray[2]
+        self.themes.separatorColor = Style.colorArray[1]
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)]
+        UINavigationBar.appearance().barTintColor = Style.colorArray[2]
+        UINavigationBar.appearance().tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
+        UITableView.appearance().tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
+        UITableViewCell.appearance().backgroundColor = Style.colorArray[3]
+        UITableViewCell.appearance().tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
     }
     
 

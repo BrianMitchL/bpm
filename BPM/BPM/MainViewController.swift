@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import ChameleonFramework
 
 class MainViewController: UIViewController {
     var loadTheme: Bool = {
@@ -35,15 +36,13 @@ class MainViewController: UIViewController {
     }
     
     func updateTheme() {
-        self.view.backgroundColor = Style.backgroundColor
-        UIApplication.sharedApplication().statusBarStyle = Style.statusbarStyle
-        bpmDisplay.textColor = Style.tintColor
-        bpmDisplay.font = Style.bpmDisplayFont
-        bpmTap.titleLabel?.font = Style.bpmTapFont
-        bpmTap.setTitleColor(Style.tintColor, forState: UIControlState.Normal)
-        bpmTap.strokeColor = Style.bpmTapColor
-        bpmTap.rippleColor = Style.bpmTapRippleColor
-        self.view.tintColor = Style.tintColor
+        self.setStatusBarStyle(UIStatusBarStyleContrast)
+        self.view.backgroundColor = Style.colorArray[2]
+        bpmDisplay.textColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
+        bpmTap.setTitleColor(UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat), forState: UIControlState.Normal)
+        bpmTap.strokeColor = Style.colorArray[1].colorWithAlphaComponent(0.25)
+        bpmTap.rippleColor = Style.colorArray[1].colorWithAlphaComponent(0.33)
+        self.view.tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
     }
     
     // BPM logic and functionality

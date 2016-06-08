@@ -132,7 +132,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="iKt-Ns-4f9">
                         <barButtonItem key="leftBarButtonItem" image="Heart" id="YQ2-DP-q3h">
-                            <color key="tintColor" red="0.99949020147323608" green="0.068877816200256348" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="heart:" destination="z4w-Wr-DAY" id="pAj-qI-7gO"/>
                             </connections>
@@ -144,7 +143,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="heart" destination="YQ2-DP-q3h" id="XH3-wm-Gb5"/>
                         <outlet property="themes" destination="HKO-oc-mMi" id="yh0-ne-fKR"/>
                     </connections>
                 </viewController>
