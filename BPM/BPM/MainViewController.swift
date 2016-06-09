@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import ChameleonFramework
+import FontAwesome_swift
 
 class MainViewController: UIViewController {
     var loadTheme: Bool = {
@@ -16,13 +17,15 @@ class MainViewController: UIViewController {
         return true
     }()
     
+    @IBOutlet weak var settings: UIButton!
     @IBOutlet weak var bpmDisplay: UILabel!
     @IBOutlet weak var bpmTap: BMButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateTheme()
+        settings.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+        settings.setTitle(String.fontAwesomeIconWithName(.Cog), forState: .Normal)
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -14,6 +14,7 @@
 		9625F1DB1CB8A223007D2041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9625F1D91CB8A223007D2041 /* Main.storyboard */; };
 		9625F1DD1CB8A223007D2041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9625F1DC1CB8A223007D2041 /* Assets.xcassets */; };
 		9625F1E01CB8A223007D2041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9625F1DE1CB8A223007D2041 /* LaunchScreen.storyboard */; };
+		96BE6CB81D0938E80022E2A2 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE6CB71D0938E80022E2A2 /* NavigationViewController.swift */; };
 		96CB9E481CBA1A8400D82534 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB9E471CBA1A8400D82534 /* Style.swift */; };
 		96F25BDE1CF6D70300AF74C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F25BDD1CF6D70300AF74C9 /* SettingsViewController.swift */; };
 		9DAEA7507245670B9D18FDCD /* Pods_BPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA2E07A1AA2130DAA9E0549 /* Pods_BPM.framework */; };
@@ -51,6 +52,7 @@
 		9625F1E11CB8A223007D2041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9625F1E61CB8A224007D2041 /* BPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9625F1F11CB8A224007D2041 /* BPMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BE6CB71D0938E80022E2A2 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		96CB9E471CBA1A8400D82534 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		96F25BDD1CF6D70300AF74C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A2BD5F8BF484A8DA5B2A6351 /* Pods-BPMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BPMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BPMUITests/Pods-BPMUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				9625F1D51CB8A223007D2041 /* AppDelegate.swift */,
 				9625F1D71CB8A223007D2041 /* MainViewController.swift */,
 				96F25BDD1CF6D70300AF74C9 /* SettingsViewController.swift */,
+				96BE6CB71D0938E80022E2A2 /* NavigationViewController.swift */,
 				961D7A7C1CB9774B007BA96C /* BMButton.swift */,
 				96CB9E471CBA1A8400D82534 /* Style.swift */,
 				9625F1D91CB8A223007D2041 /* Main.storyboard */,
@@ -413,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BE6CB81D0938E80022E2A2 /* NavigationViewController.swift in Sources */,
 				9625F1D81CB8A223007D2041 /* MainViewController.swift in Sources */,
 				961D7A7D1CB9774B007BA96C /* BMButton.swift in Sources */,
 				9625F1D61CB8A223007D2041 /* AppDelegate.swift in Sources */,

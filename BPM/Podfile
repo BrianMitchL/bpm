@@ -7,6 +7,7 @@ target 'BPM' do
 
   # Pods for BPM
   pod 'ChameleonFramework/Swift', '~> 2.1'
+  pod 'FontAwesome.swift'
   
   target 'BPMTests' do
     inherit! :search_paths

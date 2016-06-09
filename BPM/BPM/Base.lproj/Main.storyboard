@@ -60,7 +60,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-Gq-65Q">
-                                <rect key="frame" x="531" y="0.0" width="57" height="30"/>
+                                <rect key="frame" x="532" y="0.0" width="56" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="LuT-lA-khH" kind="presentation" modalTransitionStyle="flipHorizontal" id="3H6-Jm-ecY"/>
@@ -93,6 +94,7 @@
                     <connections>
                         <outlet property="bpmDisplay" destination="eqN-nT-QkB" id="3H5-8f-IEz"/>
                         <outlet property="bpmTap" destination="bUD-8N-RYU" id="K4z-kb-SnU"/>
+                        <outlet property="settings" destination="G8G-Gq-65Q" id="0Sw-45-r6V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,7 +104,7 @@
         <!--Settings-->
         <scene sceneID="yZ5-tn-MJY">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="z4w-Wr-DAY" customClass="SettingsViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z4w-Wr-DAY" customClass="SettingsViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tfo-Ul-CKK"/>
                         <viewControllerLayoutGuide type="bottom" id="bzW-jf-zuU"/>
@@ -131,18 +133,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="iKt-Ns-4f9">
-                        <barButtonItem key="leftBarButtonItem" image="Heart" id="YQ2-DP-q3h">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;3" id="YQ2-DP-q3h">
                             <connections>
                                 <action selector="heart:" destination="z4w-Wr-DAY" id="pAj-qI-7gO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z5a-DX-d3O">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="z5a-DX-d3O">
                             <connections>
                                 <action selector="done:" destination="z4w-Wr-DAY" id="Fhz-M9-YpO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="heart" destination="YQ2-DP-q3h" id="JWP-fN-vsa"/>
                         <outlet property="themes" destination="HKO-oc-mMi" id="yh0-ne-fKR"/>
                     </connections>
                 </viewController>
@@ -150,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1760" y="341"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings Nav View Controller-->
         <scene sceneID="sKj-O0-BPz">
             <objects>
-                <navigationController storyboardIdentifier="settingsNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LuT-lA-khH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="settingsNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LuT-lA-khH" customClass="SettingsNavViewController" customModule="BPM" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YHD-Kp-fwO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -169,7 +172,4 @@
             <point key="canvasLocation" x="948" y="341"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Heart" width="18" height="18"/>
-    </resources>
 </document>

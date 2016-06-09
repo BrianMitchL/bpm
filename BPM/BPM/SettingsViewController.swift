@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
+    @IBOutlet weak var heart: UIBarButtonItem!
     @IBAction func heart(sender: AnyObject) {
         let text: String = "Check out BPM - Find Tempos in Style!"
         let url = NSURL(string: "https://getbpm.xyz")
@@ -33,6 +34,9 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+        heart.setTitleTextAttributes(attributes, forState: .Normal)
+        heart.title = String.fontAwesomeIconWithName(.Heart)
         updateTheme()
         self.themes.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
@@ -95,7 +99,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     
     func updateTheme() {
-        self.setStatusBarStyle(UIStatusBarStyleContrast) //TODO: fix this in settings view
+        self.setStatusBarStyle(UIStatusBarStyleContrast)
         self.view.backgroundColor = Style.colorArray[2]
         self.view.tintColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
         self.themes.backgroundColor = Style.colorArray[2]
