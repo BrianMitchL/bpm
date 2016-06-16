@@ -64,7 +64,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="LuT-lA-khH" kind="presentation" modalTransitionStyle="flipHorizontal" id="3H6-Jm-ecY"/>
+                                    <segue destination="LuT-lA-khH" kind="presentation" id="3H6-Jm-ecY"/>
                                 </connections>
                             </button>
                         </subviews>
