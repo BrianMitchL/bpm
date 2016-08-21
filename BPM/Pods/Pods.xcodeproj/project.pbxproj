@@ -7,66 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0D16CB81A21FE5FB95322680BE821B /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1D452D06F2ED1B35854B0A7DAF09E0 /* UIColor+Chameleon.m */; };
-		06FFE113B8E333BF74680FD61C72883E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
-		097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9DDCCE31DB396FF1CC4F5BE988B7D3 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09A4729224EC35B8B5572E1895466E57 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E783E1FB5378E1EE6463DF1E9D21BAEA /* FontAwesome.swift */; };
-		1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38B805C0517775A35EEC3DE6B7998D /* ChameleonConstants.m */; };
+		00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A245AB308A21133EE51205E6AF82EADA /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1032D24590142EE5BA482235B563ABC4 /* UIColor+Chameleon.m */; };
+		097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEEC954F9CB8C460BCDCC3D3EFCAE00 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05652EA22D093ADD4D686B6B347E51 /* ChameleonConstants.m */; };
+		12D1D54665B1EDC301F4E9A900C42DC3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EB4DF5BA6A5C12EA0233279427A4E /* Enum.swift */; };
 		1503D48AF7157AAEB715158EE1146E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
-		15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2896DEDFBEB9D4723C340DCBAD7192A5 /* UIImage+ChameleonPrivate.m */; };
+		15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EEAE0BDCCBCE24ED0888647DEE1786 /* UIImage+ChameleonPrivate.m */; };
 		1736C9EB167121B7B4033DB3304686AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BE088BE12675C2748B7E2A7AB4655E /* CoreGraphics.framework */; };
-		24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1AA7E3CF94915EFC0A5ABE4C9DB67 /* NSArray+Chameleon.m */; };
+		24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF395A4539EEF9C032B485DA14CA65A /* NSArray+Chameleon.m */; };
+		27967FFAE1AD1B478141BDE32EF090CF /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30028EAD90F1FDF7623A96B5E864AD /* FontAwesomeView.swift */; };
 		298281C3DE2648D29C2A3014BF0AF726 /* Pods-BPMTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C02DF099B565C9BF6B22F68642F31E84 /* Pods-BPMTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE9EBE9DF110985660ADE179AD79C5D /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA31B5AF9CF1B0D669500ADB42BA4DC /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2666C0055C40B295B1A97112CC9B505 /* UINavigationController+Chameleon.m */; };
-		5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CF89FB78B174AAF47EE50ED4C58FF6FA /* UIViewController+Chameleon.m */; };
+		3DDE96C1DBE8B94559B5F57A31D4C791 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAD62E4FB23551602F0B7C94EC690E /* FontAwesome.swift */; };
+		4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 336DCEB374DF08288B5AA678D76FB713 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BA19EF708069859193AB66747A1BEF /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC1F7F11013EEEA42C59F1089D0FE /* UINavigationController+Chameleon.m */; };
+		4FFA6651790C1B6890BC8AF9BCE67AD4 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B85017BA95AD8AA1D1D50D72A19BB /* FontAwesome.otf */; };
+		5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18107F0565DBD666531CCEDC677148E2 /* UIViewController+Chameleon.m */; };
+		53D61C7ADDA0D962732C15EC9D74471E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BFE7B073D3BADAB1FD3267C395A2AE /* UIKit.framework */; };
 		58C8BE6229CB67B4DA57D2DA644B1E89 /* Pods-BPMTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C262594226B50D849114EC7E6F934D /* Pods-BPMTests-dummy.m */; };
-		5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B64CD41941482936247066E608B8FBE2 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E0CFA53C49477882E78AD8A1556249 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68FE7FA5D4B26609C54A620A749E16E6 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A63BC31888C49EB11882E51E4DD4 /* FontAwesome.swift-dummy.m */; };
-		6A706C24B6C49B82FA582D8A83BA8521 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3F1371C284FADB2DBCCA583D0660E32 /* FontAwesome.swift.bundle */; };
+		5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BECB2FA54C710D8544D214DC3D15D212 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A830E0DF452379513B569E5D1079D2A /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6506FD1E05C82BBBECFA0964237AEAF2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D1E8A61DA521CEA459A8269845F4 /* CoreText.framework */; };
 		6ED4A17DB489F4A5ED101B230C57EF28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
-		6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAB6EA9D058B29A697F07BDF8FC41C4 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = BC85E67B38CBDE29AE8F1C65A193326E /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1DCC11750E824B1C2995942FDFBE22 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = EECA61A0179D53128936196CFC72812F /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76373EC631DFD904474853A689CE5D08 /* Pods-BPM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D6BDDBF55177587888C3A8022F0569 /* Pods-BPM-dummy.m */; };
-		7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E44E297DD4B511FE2D6BEB9595E917 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F53147DE2677F38F95BFFB74737B122D /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79830FCC5EE94257E4E965B0412C66E2 /* Pods-BPM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE672FF52CCFE56FD9121EA8C243D298 /* Pods-BPM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A49043165A57A9FCE93B3A5244AD7E5 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E2CA78652CE860035685017FCE3295 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81840B35F7DD7F3CA4592E2B6893B933 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8DD4DBBBE9814966FA2747B536DC00 /* QuartzCore.framework */; };
 		82865C0B37A032BF2A4B0D41940AB576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
-		90BC7446157AB13557E35D2DA9860C21 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = D35C9353FEACA16C54D82DEB02431BA1 /* FontAwesome.otf */; };
-		9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D6A900E3619711226868BF15A08BB /* Chameleon_.m */; };
-		9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C98491EE6D67F3E2F7EDB5C8A3417 /* UILabel+Chameleon.m */; };
-		A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D17850470A7F643BBBCEE52B8D583 /* ChameleonShorthand.swift */; };
-		A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C025827DD473DED54A1F418D9ADDE09 /* UIButton+Chameleon.m */; };
-		AED94F6FA6EAF07DBF93544C7EA0C453 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F408D1E8A61DA521CEA459A8269845F4 /* CoreText.framework */; };
-		AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 44DDC9F40B37E2E01CAF41537BB154FB /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E61D44DCEE982F1D4B179C31696B75D /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7C35D2E5136469CE449E85CDF2365D2 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8B8DA20BFFF6FCCF79E095CACB50C0 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F60935C1607113C4E51565B8F790D73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
+		977893CD9D5483CEDEC34CC89B83CAA7 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3F1371C284FADB2DBCCA583D0660E32 /* FontAwesome.swift.bundle */; };
+		9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA59A19128B7FC6BDEC1551A088BCA /* Chameleon_.m */; };
+		9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DC56B6EF211CC0C83AAC67606348AC10 /* UILabel+Chameleon.m */; };
+		9BA89E90D08F82EC682B2BC6622669E0 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AA7C888AA05C957B25106BE07348C7 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D700EFF3CD35FB64C3B7D395371F318 /* ChameleonShorthand.swift */; };
+		A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A13FC1E955B056610660169FDDE8E38 /* UIButton+Chameleon.m */; };
+		AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 554E101D2D5B82A35C3D0D54545FDAEB /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6D87FC181B6DC019C67947F670EAE2 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD38499A52C9D3923B463F75C5F255CA /* Pods-BPMUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED89573414155F5FAC0246A75633026 /* Pods-BPMUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2D0428FDD6B65798E38B46F19E814 /* UIView+ChameleonPrivate.m */; };
-		C8205AD8AD2B7165EAA759609F9C5C88 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B489407BB5493B2AEDF151722751FB /* Enum.swift */; };
-		C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 946B7CB2188D490BFDB560FEA978494D /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F6F2CBFD7571C2B089B1761160D3A6 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BCFD88C3180F857123612740B4EB0 /* UIAppearance+Swift.m */; };
-		D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 705318BAEDB8A46FAD82FB0D503008C6 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 287D269FC1599E9A75126E71810AAA23 /* UIView+ChameleonPrivate.m */; };
+		C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E5D6782768545652E4B335F0D95CC8 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF0F718C9F8E2818B98012CDDA4C6805 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5B73DF870D611097AC43CFFAEC152D /* FontAwesome.swift-dummy.m */; };
+		CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE2AD38E2843277A0123827CE9C1802 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4A5CE89D00242B7B865D506F601A9 /* UIAppearance+Swift.m */; };
+		D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE865BD49D1BE1999BBA6BF41F53CA51 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D597614270FE309581325A112A50FE51 /* Pods-BPMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0413C9C5B671BFF8C51AC571FCB08E /* Pods-BPMUITests-dummy.m */; };
-		E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C872B8FD39DB7393432D4954F7FFA /* UIColor+ChameleonPrivate.m */; };
-		E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198348C564856B17D3D8B0DADD6BECB /* ChameleonFramework-dummy.m */; };
+		E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C12FDE5BC975BF5769FB3092EC6617 /* UIColor+ChameleonPrivate.m */; };
+		E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F37DA5A385B4B02014868AFB9209988 /* ChameleonFramework-dummy.m */; };
 		E40E50B03C60D676D66FAD62322C7B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */; };
 		EDE12978B3BB8AD4A68940CB07878C96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BFE7B073D3BADAB1FD3267C395A2AE /* UIKit.framework */; };
-		FA1411E02FF60CBBE3FD67772DCEF276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BFE7B073D3BADAB1FD3267C395A2AE /* UIKit.framework */; };
-		FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D953EC4F7542819688FFB4A7F40570 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4603C1D7F44C8B87B15D1275EF732B70 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B7E70A9A3D5FE170B2CCC8D33F40E86 /* PBXContainerItemProxy */ = {
+		192DAE8239CEDF28426AC10F45C42C62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1088253F42C36418734CF3D95E31B8AA;
+			remoteGlobalIDString = EF4F067C2D0E135B80299B089E168BDA;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
 		3D9347C076A335C47B6C6C480C0BCFF4 /* PBXContainerItemProxy */ = {
@@ -80,98 +81,99 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E64D3E3A7AD1A87C822114B7473AE1E;
+			remoteGlobalIDString = 1FE2578FF0805299395CF2A0206BB671;
 			remoteInfo = FontAwesome.swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0162C88B20587DCD269A816976BE8FEE /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
 		04E961EFC31EB32DB24F15C6FBDDADAE /* Pods-BPMTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPMTests-resources.sh"; sourceTree = "<group>"; };
 		05BA815CD78140EBB718646EC9CDC033 /* Pods-BPM-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPM-resources.sh"; sourceTree = "<group>"; };
+		08E2CA78652CE860035685017FCE3295 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		0DE2AD38E2843277A0123827CE9C1802 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
 		0FB0C6DB21E966AF445A2994B4A3C5EB /* Pods-BPMTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BPMTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1032D24590142EE5BA482235B563ABC4 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
 		15286B3656453A0F697D39AC68F73A10 /* Pods-BPMUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BPMUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18107F0565DBD666531CCEDC677148E2 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		1918840BA8B75949EB24FBF1193ADF6B /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		1E3BA8F47152E67B6321AEE8FA9AFB7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECAD62E4FB23551602F0B7C94EC690E /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
 		21872410CC5DFF7060AFF222AE706773 /* Pods-BPMTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BPMTests.modulemap"; sourceTree = "<group>"; };
-		2198348C564856B17D3D8B0DADD6BECB /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		2308AF814066AE92689320C44CEDCA26 /* Pods-BPM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BPM-acknowledgements.markdown"; sourceTree = "<group>"; };
 		23196A94A5BF44B66D0D3866A48DF3DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2896DEDFBEB9D4723C340DCBAD7192A5 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		287D269FC1599E9A75126E71810AAA23 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		29A178DFD661D52341348F39A28BDFB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F37DA5A385B4B02014868AFB9209988 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		2FA058D3E8661E14B40D55E806931D23 /* Pods-BPM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPM.debug.xcconfig"; sourceTree = "<group>"; };
-		3000C03D7EF899D4E76E9EAD2D03B1B1 /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		336DCEB374DF08288B5AA678D76FB713 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		3A830E0DF452379513B569E5D1079D2A /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		3B0B85017BA95AD8AA1D1D50D72A19BB /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		3D700EFF3CD35FB64C3B7D395371F318 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
 		3D9BE16031590D60D6DE087CA00C64F7 /* Pods-BPMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPMUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3DA31B5AF9CF1B0D669500ADB42BA4DC /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		3DE7CE1DF5C51147F329D6B0B251B17F /* Pods-BPMUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPMUITests-frameworks.sh"; sourceTree = "<group>"; };
 		3ED89573414155F5FAC0246A75633026 /* Pods-BPMUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BPMUITests-umbrella.h"; sourceTree = "<group>"; };
 		40DE6FC096F7CA11DABAF0E10F779F73 /* Pods-BPMUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BPMUITests.modulemap"; sourceTree = "<group>"; };
-		44DDC9F40B37E2E01CAF41537BB154FB /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		4A49043165A57A9FCE93B3A5244AD7E5 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		4C025827DD473DED54A1F418D9ADDE09 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
-		4E61D44DCEE982F1D4B179C31696B75D /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		4603C1D7F44C8B87B15D1275EF732B70 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		4B84D8B8DC47A263E84DA2C018C3917C /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
 		4F857F313794BD7E2CE39CA3C631757D /* Pods_BPMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		503C98491EE6D67F3E2F7EDB5C8A3417 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		58D953EC4F7542819688FFB4A7F40570 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		50E4A5CE89D00242B7B865D506F601A9 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		519EB4DF5BA6A5C12EA0233279427A4E /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		554E101D2D5B82A35C3D0D54545FDAEB /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
 		5950E3C8DC2AF1E5D68CD1EE88F7334D /* Pods-BPM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BPM-acknowledgements.plist"; sourceTree = "<group>"; };
-		5AB4269650301B4194832BF6FBF241D5 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		5D4D17850470A7F643BBBCEE52B8D583 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		5A13FC1E955B056610660169FDDE8E38 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		5DEA59A19128B7FC6BDEC1551A088BCA /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
 		5EF4BE87EDDABF37A872AC2DB61B7EBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		620BCFD88C3180F857123612740B4EB0 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		63E0A63BC31888C49EB11882E51E4DD4 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
-		6AAB6EA9D058B29A697F07BDF8FC41C4 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		6AD1AA7E3CF94915EFC0A5ABE4C9DB67 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		6EA2D0428FDD6B65798E38B46F19E814 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		6FBECEA005CC6D4AD229A8EAFE3D6A33 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
-		705318BAEDB8A46FAD82FB0D503008C6 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		60E5D6782768545652E4B335F0D95CC8 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		70BFE7B073D3BADAB1FD3267C395A2AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		71E0CFA53C49477882E78AD8A1556249 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
 		74CBA303D27AA3426F42F2AF547FB20D /* Pods-BPMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPMTests.debug.xcconfig"; sourceTree = "<group>"; };
-		77F0ADB1B67E7B012B5BC1C15F3AC0E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EE9EBE9DF110985660ADE179AD79C5D /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		7ADFC14116CEF5F8C6DFA074A3E22371 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		81BE088BE12675C2748B7E2A7AB4655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		843D6A900E3619711226868BF15A08BB /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		86EEAE0BDCCBCE24ED0888647DEE1786 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		89752C570C5F374E58AD930A96925546 /* Pods-BPMUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPMUITests-resources.sh"; sourceTree = "<group>"; };
 		8B8DD4DBBBE9814966FA2747B536DC00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		8B98C83D7EA5C5B57C50149CB03D4BED /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		8C1DCC11750E824B1C2995942FDFBE22 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		8C4DC1F7F11013EEEA42C59F1089D0FE /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
 		8CEC8BC0046F6434BE39AC37BCCB5A89 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		946B7CB2188D490BFDB560FEA978494D /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		96720973B51F7C109FCE9AC6289ED108 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		9A5B73DF870D611097AC43CFFAEC152D /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
 		9ADEA8BFA939CF03408B5838874AE518 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0413C9C5B671BFF8C51AC571FCB08E /* Pods-BPMUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BPMUITests-dummy.m"; sourceTree = "<group>"; };
-		9FDB8528B8FA291B980AAB1AB19FED85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DF1F6EDD6CD5BB38C741B7CD2969A0 /* Pods-BPM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BPM.modulemap"; sourceTree = "<group>"; };
-		A3F6F2CBFD7571C2B089B1761160D3A6 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		A245AB308A21133EE51205E6AF82EADA /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		A76D4F1839E8B9626D1023E22AB4D148 /* Pods-BPMTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BPMTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AB9DDCCE31DB396FF1CC4F5BE988B7D3 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		ABEE8C245386075633B8328426BA2E85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5EE7E6115E780B4A6EDB3E4D96E63E /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 		AC747C2A6C50256FBCCFF54C5EC3B601 /* Pods-BPMTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPMTests-frameworks.sh"; sourceTree = "<group>"; };
-		AF38B805C0517775A35EEC3DE6B7998D /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		B2C12FDE5BC975BF5769FB3092EC6617 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		B3F1371C284FADB2DBCCA583D0660E32 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BA19EF708069859193AB66747A1BEF /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		B5DE8D4BF74A59B472613E227CABABD7 /* Pods-BPMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPMTests.release.xcconfig"; sourceTree = "<group>"; };
-		B64CD41941482936247066E608B8FBE2 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		BA9C872B8FD39DB7393432D4954F7FFA /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		BC85E67B38CBDE29AE8F1C65A193326E /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
 		BD419A8BCD489F156F706F8E5A21CFB5 /* Pods_BPMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE05652EA22D093ADD4D686B6B347E51 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		BECB2FA54C710D8544D214DC3D15D212 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
 		BF281338918DFC91CD19FA0BF21D6EA4 /* Pods-BPMUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BPMUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C02DF099B565C9BF6B22F68642F31E84 /* Pods-BPMTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BPMTests-umbrella.h"; sourceTree = "<group>"; };
 		C4B295FAE79300BE2F514A046225996F /* Pods-BPM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPM.release.xcconfig"; sourceTree = "<group>"; };
 		C5C262594226B50D849114EC7E6F934D /* Pods-BPMTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BPMTests-dummy.m"; sourceTree = "<group>"; };
+		C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
 		CA2827000C162C4DD6632F042A557CBD /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF89FB78B174AAF47EE50ED4C58FF6FA /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		D35C9353FEACA16C54D82DEB02431BA1 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
-		D5B489407BB5493B2AEDF151722751FB /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		DB1D452D06F2ED1B35854B0A7DAF09E0 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		CBEEC954F9CB8C460BCDCC3D3EFCAE00 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		CE865BD49D1BE1999BBA6BF41F53CA51 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		DC56B6EF211CC0C83AAC67606348AC10 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
 		DD98D73EE6CCFD495A0594EB781E9487 /* Pods-BPM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BPM-frameworks.sh"; sourceTree = "<group>"; };
-		DE8B8DA20BFFF6FCCF79E095CACB50C0 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		E09F37DC4936EE70D003E5F4D7BF66BF /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
-		E2666C0055C40B295B1A97112CC9B505 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		E6E44E297DD4B511FE2D6BEB9595E917 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		E783E1FB5378E1EE6463DF1E9D21BAEA /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
-		EA5F3EC27484AF95ADF5300D53DE8C63 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		EB0D16CB81A21FE5FB95322680BE821B /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		DE30028EAD90F1FDF7623A96B5E864AD /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		E3AA7C888AA05C957B25106BE07348C7 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
 		EE672FF52CCFE56FD9121EA8C243D298 /* Pods-BPM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BPM-umbrella.h"; sourceTree = "<group>"; };
+		EECA61A0179D53128936196CFC72812F /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
 		F0D6BDDBF55177587888C3A8022F0569 /* Pods-BPM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BPM-dummy.m"; sourceTree = "<group>"; };
-		F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
 		F18274B2C0A75F5F2E5E9E3BD549DCD1 /* Pods_BPM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BPM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408D1E8A61DA521CEA459A8269845F4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		F53147DE2677F38F95BFFB74737B122D /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		FAF395A4539EEF9C032B485DA14CA65A /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
 		FEF7D62EDE39C96910A6579874B4E7F4 /* Pods-BPMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BPMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6D87FC181B6DC019C67947F670EAE2 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C5B291C2C123C1076B19050D45CBB72 /* Frameworks */ = {
+		5578ABFFBCB65D3EBF4D0CD1D5A77EB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,13 +208,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA96ADEE8B32F2B9F554C84B9A491919 /* Frameworks */ = {
+		86EBEB7A5BC84E3C24D67ADD82B00EA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED94F6FA6EAF07DBF93544C7EA0C453 /* CoreText.framework in Frameworks */,
-				06FFE113B8E333BF74680FD61C72883E /* Foundation.framework in Frameworks */,
-				FA1411E02FF60CBBE3FD67772DCEF276 /* UIKit.framework in Frameworks */,
+				6506FD1E05C82BBBECFA0964237AEAF2 /* CoreText.framework in Frameworks */,
+				8F60935C1607113C4E51565B8F790D73 /* Foundation.framework in Frameworks */,
+				53D61C7ADDA0D962732C15EC9D74471E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,20 +245,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07C9444E85E79D9BEC5861F8842EB979 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5AB4269650301B4194832BF6FBF241D5 /* ChameleonFramework.modulemap */,
-				EA5F3EC27484AF95ADF5300D53DE8C63 /* ChameleonFramework.xcconfig */,
-				2198348C564856B17D3D8B0DADD6BECB /* ChameleonFramework-dummy.m */,
-				0162C88B20587DCD269A816976BE8FEE /* ChameleonFramework-prefix.pch */,
-				71E0CFA53C49477882E78AD8A1556249 /* ChameleonFramework-umbrella.h */,
-				9FDB8528B8FA291B980AAB1AB19FED85 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
-			sourceTree = "<group>";
-		};
 		10C9418FD4FDB026717BAE46040101FD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,25 +263,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24D923AD4E24FD877321A2C24762597D /* Support Files */ = {
+		3E401DB148BE48183F801F6624770F78 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6FBECEA005CC6D4AD229A8EAFE3D6A33 /* FontAwesome.swift.modulemap */,
-				F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */,
-				63E0A63BC31888C49EB11882E51E4DD4 /* FontAwesome.swift-dummy.m */,
-				E09F37DC4936EE70D003E5F4D7BF66BF /* FontAwesome.swift-prefix.pch */,
-				DE8B8DA20BFFF6FCCF79E095CACB50C0 /* FontAwesome.swift-umbrella.h */,
-				77F0ADB1B67E7B012B5BC1C15F3AC0E3 /* Info.plist */,
-				3000C03D7EF899D4E76E9EAD2D03B1B1 /* ResourceBundle-FontAwesome.swift-Info.plist */,
+				87C3EC692EA8993FA45956573B55D9BA /* ChameleonFramework */,
+				6D15DD2422612F4CBFAAC143C27B9C77 /* FontAwesome.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FontAwesome.swift";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		4ADE9665B622B6DF706D2E9B4B8F5CBF /* Resources */ = {
+		49A0C2354A3395D080D3A70D3FD7AEA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D35C9353FEACA16C54D82DEB02431BA1 /* FontAwesome.otf */,
+				3B0B85017BA95AD8AA1D1D50D72A19BB /* FontAwesome.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -316,15 +298,79 @@
 			path = "Target Support Files/Pods-BPM";
 			sourceTree = "<group>";
 		};
+		6D15DD2422612F4CBFAAC143C27B9C77 /* FontAwesome.swift */ = {
+			isa = PBXGroup;
+			children = (
+				519EB4DF5BA6A5C12EA0233279427A4E /* Enum.swift */,
+				1ECAD62E4FB23551602F0B7C94EC690E /* FontAwesome.swift */,
+				DE30028EAD90F1FDF7623A96B5E864AD /* FontAwesomeView.swift */,
+				49A0C2354A3395D080D3A70D3FD7AEA9 /* Resources */,
+				FF60672CB94B3906278D6F6809C116AB /* Support Files */,
+			);
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		78D6E0CD67B04A5D8ECA9E25A512CFB1 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				08E2CA78652CE860035685017FCE3295 /* Chameleon.h */,
+				EECA61A0179D53128936196CFC72812F /* Chameleon_.h */,
+				5DEA59A19128B7FC6BDEC1551A088BCA /* Chameleon_.m */,
+				CBEEC954F9CB8C460BCDCC3D3EFCAE00 /* ChameleonConstants.h */,
+				BE05652EA22D093ADD4D686B6B347E51 /* ChameleonConstants.m */,
+				B4BA19EF708069859193AB66747A1BEF /* ChameleonEnums.h */,
+				BECB2FA54C710D8544D214DC3D15D212 /* ChameleonMacros.h */,
+				4603C1D7F44C8B87B15D1275EF732B70 /* NSArray+Chameleon.h */,
+				FAF395A4539EEF9C032B485DA14CA65A /* NSArray+Chameleon.m */,
+				FF6D87FC181B6DC019C67947F670EAE2 /* UIAppearance+Swift.h */,
+				50E4A5CE89D00242B7B865D506F601A9 /* UIAppearance+Swift.m */,
+				60E5D6782768545652E4B335F0D95CC8 /* UIButton+Chameleon.h */,
+				5A13FC1E955B056610660169FDDE8E38 /* UIButton+Chameleon.m */,
+				0DE2AD38E2843277A0123827CE9C1802 /* UIColor+Chameleon.h */,
+				1032D24590142EE5BA482235B563ABC4 /* UIColor+Chameleon.m */,
+				336DCEB374DF08288B5AA678D76FB713 /* UIColor+ChameleonPrivate.h */,
+				B2C12FDE5BC975BF5769FB3092EC6617 /* UIColor+ChameleonPrivate.m */,
+				F53147DE2677F38F95BFFB74737B122D /* UIImage+ChameleonPrivate.h */,
+				86EEAE0BDCCBCE24ED0888647DEE1786 /* UIImage+ChameleonPrivate.m */,
+				A245AB308A21133EE51205E6AF82EADA /* UILabel+Chameleon.h */,
+				DC56B6EF211CC0C83AAC67606348AC10 /* UILabel+Chameleon.m */,
+				8C1DCC11750E824B1C2995942FDFBE22 /* UINavigationController+Chameleon.h */,
+				8C4DC1F7F11013EEEA42C59F1089D0FE /* UINavigationController+Chameleon.m */,
+				CE865BD49D1BE1999BBA6BF41F53CA51 /* UIView+ChameleonPrivate.h */,
+				287D269FC1599E9A75126E71810AAA23 /* UIView+ChameleonPrivate.m */,
+				554E101D2D5B82A35C3D0D54545FDAEB /* UIViewController+Chameleon.h */,
+				18107F0565DBD666531CCEDC677148E2 /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				F782EE4C70B3DE4B9E0CF55236ED9D37 /* Pods */,
+				3E401DB148BE48183F801F6624770F78 /* Pods */,
 				06D996EA5295D554734F56169F408814 /* Products */,
 				10C9418FD4FDB026717BAE46040101FD /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		87C3EC692EA8993FA45956573B55D9BA /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				78D6E0CD67B04A5D8ECA9E25A512CFB1 /* Default */,
+				DA8A0EB441E21924F3D6EEFD8219658B /* Support Files */,
+				95E4CF8A862C6B8B1A6CB355E04AACAA /* Swift */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		95E4CF8A862C6B8B1A6CB355E04AACAA /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3D700EFF3CD35FB64C3B7D395371F318 /* ChameleonShorthand.swift */,
+			);
+			name = Swift;
 			sourceTree = "<group>";
 		};
 		98D8E1B8E5425B55732206F84F22DEC1 /* iOS */ = {
@@ -357,67 +403,18 @@
 			path = "Target Support Files/Pods-BPMUITests";
 			sourceTree = "<group>";
 		};
-		9DEEA3272901BB5AD3F10012B3676C42 /* Swift */ = {
+		DA8A0EB441E21924F3D6EEFD8219658B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5D4D17850470A7F643BBBCEE52B8D583 /* ChameleonShorthand.swift */,
+				1918840BA8B75949EB24FBF1193ADF6B /* ChameleonFramework.modulemap */,
+				7ADFC14116CEF5F8C6DFA074A3E22371 /* ChameleonFramework.xcconfig */,
+				2F37DA5A385B4B02014868AFB9209988 /* ChameleonFramework-dummy.m */,
+				8B98C83D7EA5C5B57C50149CB03D4BED /* ChameleonFramework-prefix.pch */,
+				3A830E0DF452379513B569E5D1079D2A /* ChameleonFramework-umbrella.h */,
+				ABEE8C245386075633B8328426BA2E85 /* Info.plist */,
 			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		BB6F99121DA7C0CBFB722F269D35CA7B /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				4A49043165A57A9FCE93B3A5244AD7E5 /* Chameleon.h */,
-				BC85E67B38CBDE29AE8F1C65A193326E /* Chameleon_.h */,
-				843D6A900E3619711226868BF15A08BB /* Chameleon_.m */,
-				AB9DDCCE31DB396FF1CC4F5BE988B7D3 /* ChameleonConstants.h */,
-				AF38B805C0517775A35EEC3DE6B7998D /* ChameleonConstants.m */,
-				3DA31B5AF9CF1B0D669500ADB42BA4DC /* ChameleonEnums.h */,
-				B64CD41941482936247066E608B8FBE2 /* ChameleonMacros.h */,
-				58D953EC4F7542819688FFB4A7F40570 /* NSArray+Chameleon.h */,
-				6AD1AA7E3CF94915EFC0A5ABE4C9DB67 /* NSArray+Chameleon.m */,
-				4E61D44DCEE982F1D4B179C31696B75D /* UIAppearance+Swift.h */,
-				620BCFD88C3180F857123612740B4EB0 /* UIAppearance+Swift.m */,
-				946B7CB2188D490BFDB560FEA978494D /* UIButton+Chameleon.h */,
-				4C025827DD473DED54A1F418D9ADDE09 /* UIButton+Chameleon.m */,
-				A3F6F2CBFD7571C2B089B1761160D3A6 /* UIColor+Chameleon.h */,
-				DB1D452D06F2ED1B35854B0A7DAF09E0 /* UIColor+Chameleon.m */,
-				7EE9EBE9DF110985660ADE179AD79C5D /* UIColor+ChameleonPrivate.h */,
-				BA9C872B8FD39DB7393432D4954F7FFA /* UIColor+ChameleonPrivate.m */,
-				E6E44E297DD4B511FE2D6BEB9595E917 /* UIImage+ChameleonPrivate.h */,
-				2896DEDFBEB9D4723C340DCBAD7192A5 /* UIImage+ChameleonPrivate.m */,
-				EB0D16CB81A21FE5FB95322680BE821B /* UILabel+Chameleon.h */,
-				503C98491EE6D67F3E2F7EDB5C8A3417 /* UILabel+Chameleon.m */,
-				6AAB6EA9D058B29A697F07BDF8FC41C4 /* UINavigationController+Chameleon.h */,
-				E2666C0055C40B295B1A97112CC9B505 /* UINavigationController+Chameleon.m */,
-				705318BAEDB8A46FAD82FB0D503008C6 /* UIView+ChameleonPrivate.h */,
-				6EA2D0428FDD6B65798E38B46F19E814 /* UIView+ChameleonPrivate.m */,
-				44DDC9F40B37E2E01CAF41537BB154FB /* UIViewController+Chameleon.h */,
-				CF89FB78B174AAF47EE50ED4C58FF6FA /* UIViewController+Chameleon.m */,
-			);
-			name = Default;
-			sourceTree = "<group>";
-		};
-		D68FCF904FAE54F379EF889F15114FAE /* ChameleonFramework */ = {
-			isa = PBXGroup;
-			children = (
-				BB6F99121DA7C0CBFB722F269D35CA7B /* Default */,
-				07C9444E85E79D9BEC5861F8842EB979 /* Support Files */,
-				9DEEA3272901BB5AD3F10012B3676C42 /* Swift */,
-			);
-			path = ChameleonFramework;
-			sourceTree = "<group>";
-		};
-		DE0B2E8D0490966FB0E2D285935D6B91 /* FontAwesome.swift */ = {
-			isa = PBXGroup;
-			children = (
-				D5B489407BB5493B2AEDF151722751FB /* Enum.swift */,
-				E783E1FB5378E1EE6463DF1E9D21BAEA /* FontAwesome.swift */,
-				4ADE9665B622B6DF706D2E9B4B8F5CBF /* Resources */,
-				24D923AD4E24FD877321A2C24762597D /* Support Files */,
-			);
-			path = FontAwesome.swift;
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 		F522EA32F68A429590B88C91B06E8B4C /* Pods-BPMTests */ = {
@@ -438,18 +435,32 @@
 			path = "Target Support Files/Pods-BPMTests";
 			sourceTree = "<group>";
 		};
-		F782EE4C70B3DE4B9E0CF55236ED9D37 /* Pods */ = {
+		FF60672CB94B3906278D6F6809C116AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D68FCF904FAE54F379EF889F15114FAE /* ChameleonFramework */,
-				DE0B2E8D0490966FB0E2D285935D6B91 /* FontAwesome.swift */,
+				AC5EE7E6115E780B4A6EDB3E4D96E63E /* FontAwesome.swift.modulemap */,
+				C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */,
+				9A5B73DF870D611097AC43CFFAEC152D /* FontAwesome.swift-dummy.m */,
+				96720973B51F7C109FCE9AC6289ED108 /* FontAwesome.swift-prefix.pch */,
+				E3AA7C888AA05C957B25106BE07348C7 /* FontAwesome.swift-umbrella.h */,
+				1E3BA8F47152E67B6321AEE8FA9AFB7C /* Info.plist */,
+				4B84D8B8DC47A263E84DA2C018C3917C /* ResourceBundle-FontAwesome.swift-Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		13777D85DF4CD6678BD632B70F670E28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA89E90D08F82EC682B2BC6622669E0 /* FontAwesome.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59890BED3AF6CEBA2D3BC9A5C45EFBA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,14 +481,6 @@
 				6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */,
 				D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */,
 				AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		623E119AA50B01756FDEB59B0DB7F488 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7C35D2E5136469CE449E85CDF2365D2 /* FontAwesome.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,22 +528,24 @@
 			productReference = BD419A8BCD489F156F706F8E5A21CFB5 /* Pods_BPMUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1088253F42C36418734CF3D95E31B8AA /* FontAwesome.swift-FontAwesome.swift */ = {
+		1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F68A89A4B84796EAB1C4FCDFBA012C8 /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */;
+			buildConfigurationList = F38BD62EC04F59923F9724EE5CEF993B /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */;
 			buildPhases = (
-				824F1376AAD08AD5F9F87BCA12A4B7BA /* Sources */,
-				4C5B291C2C123C1076B19050D45CBB72 /* Frameworks */,
-				1EC9C47345FEF120116120408A8FDAF3 /* Resources */,
+				09814B1C51ECFF2DBBA94B61CEAB2E19 /* Sources */,
+				86EBEB7A5BC84E3C24D67ADD82B00EA6 /* Frameworks */,
+				E4D30328F854BCE3F55C358DF822523A /* Resources */,
+				13777D85DF4CD6678BD632B70F670E28 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5044CA3A48D08FC86E1A3B1F860FAE01 /* PBXTargetDependency */,
 			);
-			name = "FontAwesome.swift-FontAwesome.swift";
-			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = B3F1371C284FADB2DBCCA583D0660E32 /* FontAwesome.swift.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = FontAwesome.swift;
+			productName = FontAwesome.swift;
+			productReference = 8CEC8BC0046F6434BE39AC37BCCB5A89 /* FontAwesome_swift.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		39EC37E387BB9FF03C89044DD5FDC2DB /* Pods-BPM */ = {
 			isa = PBXNativeTarget;
@@ -595,24 +600,22 @@
 			productReference = CA2827000C162C4DD6632F042A557CBD /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9E64D3E3A7AD1A87C822114B7473AE1E /* FontAwesome.swift */ = {
+		EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DD6A31523A0353F81D467B95CBE328C /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */;
+			buildConfigurationList = C7B375BC6286A9E3DE2F46F4B52CBA3F /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */;
 			buildPhases = (
-				1E19681EDF0AC797D8FDB355395CDDA8 /* Sources */,
-				BA96ADEE8B32F2B9F554C84B9A491919 /* Frameworks */,
-				7EA50C50C507B00726F9A4AF0D8AEAAE /* Resources */,
-				623E119AA50B01756FDEB59B0DB7F488 /* Headers */,
+				619EA0F427AF8584A7B03876241916DE /* Sources */,
+				5578ABFFBCB65D3EBF4D0CD1D5A77EB2 /* Frameworks */,
+				56ECBAFBCBB76303F03696DA1E059127 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F6592D2590DC0581E00EDE10AAA6191 /* PBXTargetDependency */,
 			);
-			name = FontAwesome.swift;
-			productName = FontAwesome.swift;
-			productReference = 8CEC8BC0046F6434BE39AC37BCCB5A89 /* FontAwesome_swift.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "FontAwesome.swift-FontAwesome.swift";
+			productName = "FontAwesome.swift-FontAwesome.swift";
+			productReference = B3F1371C284FADB2DBCCA583D0660E32 /* FontAwesome.swift.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -636,8 +639,8 @@
 			projectRoot = "";
 			targets = (
 				5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */,
-				9E64D3E3A7AD1A87C822114B7473AE1E /* FontAwesome.swift */,
-				1088253F42C36418734CF3D95E31B8AA /* FontAwesome.swift-FontAwesome.swift */,
+				1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */,
+				EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */,
 				39EC37E387BB9FF03C89044DD5FDC2DB /* Pods-BPM */,
 				3C336E0EE1641B4B8F2AFB1E6389525A /* Pods-BPMTests */,
 				0F61840318E5DB6E1A8B3042DD2B35B2 /* Pods-BPMUITests */,
@@ -646,19 +649,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1EC9C47345FEF120116120408A8FDAF3 /* Resources */ = {
+		56ECBAFBCBB76303F03696DA1E059127 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BC7446157AB13557E35D2DA9860C21 /* FontAwesome.otf in Resources */,
+				4FFA6651790C1B6890BC8AF9BCE67AD4 /* FontAwesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EA50C50C507B00726F9A4AF0D8AEAAE /* Resources */ = {
+		E4D30328F854BCE3F55C358DF822523A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A706C24B6C49B82FA582D8A83BA8521 /* FontAwesome.swift.bundle in Resources */,
+				977893CD9D5483CEDEC34CC89B83CAA7 /* FontAwesome.swift.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,13 +676,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E19681EDF0AC797D8FDB355395CDDA8 /* Sources */ = {
+		09814B1C51ECFF2DBBA94B61CEAB2E19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8205AD8AD2B7165EAA759609F9C5C88 /* Enum.swift in Sources */,
-				09A4729224EC35B8B5572E1895466E57 /* FontAwesome.swift in Sources */,
-				68FE7FA5D4B26609C54A620A749E16E6 /* FontAwesome.swift-dummy.m in Sources */,
+				12D1D54665B1EDC301F4E9A900C42DC3 /* Enum.swift in Sources */,
+				3DDE96C1DBE8B94559B5F57A31D4C791 /* FontAwesome.swift in Sources */,
+				CF0F718C9F8E2818B98012CDDA4C6805 /* FontAwesome.swift-dummy.m in Sources */,
+				27967FFAE1AD1B478141BDE32EF090CF /* FontAwesomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +695,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		824F1376AAD08AD5F9F87BCA12A4B7BA /* Sources */ = {
+		619EA0F427AF8584A7B03876241916DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -730,22 +734,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5044CA3A48D08FC86E1A3B1F860FAE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FontAwesome.swift-FontAwesome.swift";
+			target = EF4F067C2D0E135B80299B089E168BDA /* FontAwesome.swift-FontAwesome.swift */;
+			targetProxy = 192DAE8239CEDF28426AC10F45C42C62 /* PBXContainerItemProxy */;
+		};
 		5E4D44A52CCFD994964DA085E60DD3CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = 5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */;
 			targetProxy = 3D9347C076A335C47B6C6C480C0BCFF4 /* PBXContainerItemProxy */;
 		};
-		9F6592D2590DC0581E00EDE10AAA6191 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FontAwesome.swift-FontAwesome.swift";
-			target = 1088253F42C36418734CF3D95E31B8AA /* FontAwesome.swift-FontAwesome.swift */;
-			targetProxy = 0B7E70A9A3D5FE170B2CCC8D33F40E86 /* PBXContainerItemProxy */;
-		};
 		ECAE5797EDC2FF79E6A00F52CAE08E41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FontAwesome.swift;
-			target = 9E64D3E3A7AD1A87C822114B7473AE1E /* FontAwesome.swift */;
+			target = 1FE2578FF0805299395CF2A0206BB671 /* FontAwesome.swift */;
 			targetProxy = FD5493C1766F9C235C85834D4045EDAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -793,6 +797,52 @@
 			};
 			name = Debug;
 		};
+		0A377CDE9B27653F98E0692049B8DE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1D937649D911EF180CCA31EEB6D09E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		26EC1C21E654999C8A8785D4AC8039F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEF7D62EDE39C96910A6579874B4E7F4 /* Pods-BPMUITests.debug.xcconfig */;
@@ -820,6 +870,36 @@
 				PRODUCT_NAME = Pods_BPMUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		366C2A48230E8F828A86CC50D4DDEB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -859,26 +939,9 @@
 			};
 			name = Debug;
 		};
-		52C6BAB4B036B1F9D38C2762408A9F96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = FontAwesome.swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		55B23AADC51506EE1351EF28BA3504DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5F3EC27484AF95ADF5300D53DE8C63 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 7ADFC14116CEF5F8C6DFA074A3E22371 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -904,36 +967,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		77D24B6AED2F2551AA6ABEE706D9C040 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FontAwesome_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		7D60A3BD45B5BEEFD3D56895496BECD4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1001,52 +1034,6 @@
 			};
 			name = Release;
 		};
-		8402BD46C635C737475B46E3B00136C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FontAwesome_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8CCD6BC1A583BAE6557501C7E91F298B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F151D7CD7B4A324AACF499DE5F7885C3 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = FontAwesome.swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		980EAAC68A3943F82C79D0710C9B163A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FA058D3E8661E14B40D55E806931D23 /* Pods-BPM.debug.xcconfig */;
@@ -1081,9 +1068,26 @@
 			};
 			name = Debug;
 		};
+		A5CDEF4896424916421E96580C2BC61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E6EC2A90A4FC0F22D1B4E4D65AFB36 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		AC0F797C6CFD6A2EE34C448622133782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5F3EC27484AF95ADF5300D53DE8C63 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 7ADFC14116CEF5F8C6DFA074A3E22371 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1194,24 +1198,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DD6A31523A0353F81D467B95CBE328C /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77D24B6AED2F2551AA6ABEE706D9C040 /* Debug */,
-				8402BD46C635C737475B46E3B00136C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F68A89A4B84796EAB1C4FCDFBA012C8 /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52C6BAB4B036B1F9D38C2762408A9F96 /* Debug */,
-				8CCD6BC1A583BAE6557501C7E91F298B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3E46692A740A13739C4525A6550BEE8A /* Build configuration list for PBXNativeTarget "Pods-BPMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1244,6 +1230,24 @@
 			buildConfigurations = (
 				980EAAC68A3943F82C79D0710C9B163A /* Debug */,
 				BF8510869C65657CFA5DB09E86C44D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B375BC6286A9E3DE2F46F4B52CBA3F /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CDEF4896424916421E96580C2BC61F /* Debug */,
+				0A377CDE9B27653F98E0692049B8DE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38BD62EC04F59923F9724EE5CEF993B /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366C2A48230E8F828A86CC50D4DDEB35 /* Debug */,
+				1D937649D911EF180CCA31EEB6D09E8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

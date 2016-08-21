@@ -2,7 +2,7 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - FontAwesome.swift (0.7.3)
+  - FontAwesome.swift (0.8.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (~> 2.1)
@@ -10,8 +10,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  FontAwesome.swift: f694fe0f667d6d3390b5919cdb0556a27b75d427
+  FontAwesome.swift: f8c6cc5c42cbe93bdc04371363bc7b371fb3d3a1
 
 PODFILE CHECKSUM: 18e087d81d1803bb2772de9720bcf9515d0ae918
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.0.0

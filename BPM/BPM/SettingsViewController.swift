@@ -10,12 +10,17 @@ import UIKit
 import ChameleonFramework
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
+    var selection: String!
+    
     var loadTheme: Bool = {
         Style.loadTheme()
         return true
     }()
 
     @IBAction func done(sender: UIStoryboardSegue) {
+        Style.loadTheme()
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
@@ -37,6 +42,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
         heart.setTitleTextAttributes(attributes, forState: .Normal)
         heart.title = String.fontAwesomeIconWithName(.Heart)
+        selection = defaults.stringForKey("Theme")
         updateTheme()
         self.themes.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
@@ -66,13 +72,14 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.themes.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell = self.themes.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
         cell.textLabel?.text = Style.availableThemes[indexPath.row]
         cell.textLabel?.textColor = UIColor(contrastingBlackOrWhiteColorOn:Style.colorArray[2], isFlat:Style.isFlat)
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        cell.accessoryType = UITableViewCellAccessoryType.None
+        cell.selected = false
         if Style.availableThemes[indexPath.row] == defaults.stringForKey("Theme") {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None) //autoselect the checked theme
@@ -82,19 +89,18 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        print("Selected")
+        let cell = tableView.cellForRowAtIndexPath(indexPath)!
         cell.accessoryType = UITableViewCellAccessoryType.Checkmark
-        
-        let selection = Style.availableThemes[indexPath.row]
-        let defaults = NSUserDefaults.standardUserDefaults()
+        selection = Style.availableThemes[indexPath.row]
         defaults.setObject(selection, forKey: "Theme")
-        Style.loadTheme()
 //        updateTheme()
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        cell.accessoryType = UITableViewCellAccessoryType.None
+        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+            cell.accessoryType = UITableViewCellAccessoryType.None
+        }
     }
 
     
